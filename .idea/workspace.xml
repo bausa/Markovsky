@@ -1,0 +1,1729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6dc15556-29cc-4745-aae4-35ff3f6442cc" name="Default" comment="" />
+    <ignored path="MarkovChain2.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="MarkovChain2" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3058104">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scanner.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/util/Scanner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1537" column="0" selection-start-line="1537" selection-start-column="0" selection-end-line="1537" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#99893#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#13841#13842#0" expanded="false" />
+                <element signature="e#13890#13891#0" expanded="false" />
+                <element signature="e#13947#13948#0" expanded="false" />
+                <element signature="e#13999#14000#0" expanded="false" />
+                <element signature="method#boolPattern#0;class#Scanner#0" expanded="false" />
+                <element signature="method#buildIntegerPatternString#0;class#Scanner#0" expanded="false" />
+                <element signature="method#integerPattern#0;class#Scanner#0" expanded="false" />
+                <element signature="method#separatorPattern#0;class#Scanner#0" expanded="false" />
+                <element signature="method#linePattern#0;class#Scanner#0" expanded="false" />
+                <element signature="method#buildFloatAndDecimalPattern#0;class#Scanner#0" expanded="false" />
+                <element signature="method#floatPattern#0;class#Scanner#0" expanded="false" />
+                <element signature="method#decimalPattern#0;class#Scanner#0" expanded="false" />
+                <element signature="method#Scanner#0;class#Scanner#0" expanded="false" />
+                <element signature="e#21196#21197#0" expanded="false" />
+                <element signature="e#21278#21279#0" expanded="false" />
+                <element signature="e#21679#21680#0" expanded="false" />
+                <element signature="e#21750#21751#0" expanded="false" />
+                <element signature="method#Scanner#3;class#Scanner#0" expanded="false" />
+                <element signature="method#toCharset#0;class#Scanner#0" expanded="false" />
+                <element signature="method#makeReadable#0;class#Scanner#0" expanded="false" />
+                <element signature="method#Scanner#4;class#Scanner#0" expanded="false" />
+                <element signature="method#Scanner#5;class#Scanner#0" expanded="false" />
+                <element signature="method#Scanner#6;class#Scanner#0" expanded="false" />
+                <element signature="method#toDecoder#0;class#Scanner#0" expanded="false" />
+                <element signature="method#makeReadable#1;class#Scanner#0" expanded="false" />
+                <element signature="method#Scanner#7;class#Scanner#0" expanded="false" />
+                <element signature="method#Scanner#8;class#Scanner#0" expanded="false" />
+                <element signature="method#Scanner#9;class#Scanner#0" expanded="false" />
+                <element signature="e#26907#26908#0" expanded="false" />
+                <element signature="e#26973#26974#0" expanded="false" />
+                <element signature="method#Scanner#11;class#Scanner#0" expanded="false" />
+                <element signature="method#makeReadable#2;class#Scanner#0" expanded="false" />
+                <element signature="method#Scanner#12;class#Scanner#0" expanded="false" />
+                <element signature="e#28403#28404#0" expanded="false" />
+                <element signature="e#28450#28451#0" expanded="false" />
+                <element signature="method#revertState#0;class#Scanner#0" expanded="false" />
+                <element signature="method#revertState#1;class#Scanner#0" expanded="false" />
+                <element signature="method#cacheResult#0;class#Scanner#0" expanded="false" />
+                <element signature="method#cacheResult#1;class#Scanner#0" expanded="false" />
+                <element signature="method#clearCaches#0;class#Scanner#0" expanded="false" />
+                <element signature="method#getCachedResult#0;class#Scanner#0" expanded="false" />
+                <element signature="method#useTypeCache#0;class#Scanner#0" expanded="false" />
+                <element signature="method#readInput#0;class#Scanner#0" expanded="false" />
+                <element signature="method#makeSpace#0;class#Scanner#0" expanded="false" />
+                <element signature="method#translateSavedIndexes#0;class#Scanner#0" expanded="false" />
+                <element signature="method#throwFor#0;class#Scanner#0" expanded="false" />
+                <element signature="method#hasTokenInBuffer#0;class#Scanner#0" expanded="false" />
+                <element signature="method#getCompleteTokenInBuffer#0;class#Scanner#0" expanded="false" />
+                <element signature="method#findPatternInBuffer#0;class#Scanner#0" expanded="false" />
+                <element signature="method#matchPatternInBuffer#0;class#Scanner#0" expanded="false" />
+                <element signature="method#ensureOpen#0;class#Scanner#0" expanded="false" />
+                <element signature="method#close#0;class#Scanner#0" expanded="false" />
+                <element signature="e#40917#40918#0" expanded="false" />
+                <element signature="e#40953#40954#0" expanded="false" />
+                <element signature="e#41173#41174#0" expanded="false" />
+                <element signature="e#41208#41209#0" expanded="false" />
+                <element signature="method#useDelimiter#0;class#Scanner#0" expanded="false" />
+                <element signature="method#useDelimiter#1;class#Scanner#0" expanded="false" />
+                <element signature="e#42513#42514#0" expanded="false" />
+                <element signature="e#42547#42548#0" expanded="false" />
+                <element signature="method#useLocale#0;class#Scanner#0" expanded="false" />
+                <element signature="e#44951#44952#0" expanded="false" />
+                <element signature="e#44991#44992#0" expanded="false" />
+                <element signature="method#useRadix#0;class#Scanner#0" expanded="false" />
+                <element signature="method#setRadix#0;class#Scanner#0" expanded="false" />
+                <element signature="method#match#0;class#Scanner#0" expanded="false" />
+                <element signature="method#toString#0;class#Scanner#0" expanded="false" />
+                <element signature="method#hasNext#0;class#Scanner#0" expanded="false" />
+                <element signature="method#next#0;class#Scanner#0" expanded="false" />
+                <element signature="e#50783#50784#0" expanded="false" />
+                <element signature="e#50840#50841#0" expanded="false" />
+                <element signature="e#51489#51490#0" expanded="false" />
+                <element signature="e#51550#51551#0" expanded="false" />
+                <element signature="e#52228#52229#0" expanded="false" />
+                <element signature="e#52286#52287#0" expanded="false" />
+                <element signature="method#hasNext#2;class#Scanner#0" expanded="false" />
+                <element signature="method#next#2;class#Scanner#0" expanded="false" />
+                <element signature="method#hasNextLine#0;class#Scanner#0" expanded="false" />
+                <element signature="e#57377#57378#0" expanded="false" />
+                <element signature="e#57441#57442#0" expanded="false" />
+                <element signature="method#findInLine#1;class#Scanner#0" expanded="false" />
+                <element signature="method#findWithinHorizon#0;class#Scanner#0" expanded="false" />
+                <element signature="method#findWithinHorizon#1;class#Scanner#0" expanded="false" />
+                <element signature="method#skip#0;class#Scanner#0" expanded="false" />
+                <element signature="e#64742#64743#0" expanded="false" />
+                <element signature="e#64800#64801#0" expanded="false" />
+                <element signature="e#65330#65331#0" expanded="false" />
+                <element signature="e#65375#65376#0" expanded="false" />
+                <element signature="method#nextBoolean#0;class#Scanner#0" expanded="false" />
+                <element signature="e#66525#66526#0" expanded="false" />
+                <element signature="e#66573#66574#0" expanded="false" />
+                <element signature="method#hasNextByte#1;class#Scanner#0" expanded="false" />
+                <element signature="e#68265#68266#0" expanded="false" />
+                <element signature="e#68311#68312#0" expanded="false" />
+                <element signature="method#nextByte#1;class#Scanner#0" expanded="false" />
+                <element signature="e#70929#70930#0" expanded="false" />
+                <element signature="e#70978#70979#0" expanded="false" />
+                <element signature="method#hasNextShort#1;class#Scanner#0" expanded="false" />
+                <element signature="e#72706#72707#0" expanded="false" />
+                <element signature="e#72752#72753#0" expanded="false" />
+                <element signature="method#nextShort#1;class#Scanner#0" expanded="false" />
+                <element signature="e#75360#75361#0" expanded="false" />
+                <element signature="e#75407#75408#0" expanded="false" />
+                <element signature="method#hasNextInt#1;class#Scanner#0" expanded="false" />
+                <element signature="method#processIntegerToken#0;class#Scanner#0" expanded="false" />
+                <element signature="e#78006#78007#0" expanded="false" />
+                <element signature="e#78050#78051#0" expanded="false" />
+                <element signature="method#nextInt#1;class#Scanner#0" expanded="false" />
+                <element signature="e#80648#80649#0" expanded="false" />
+                <element signature="e#80696#80697#0" expanded="false" />
+                <element signature="method#hasNextLong#1;class#Scanner#0" expanded="false" />
+                <element signature="e#82388#82389#0" expanded="false" />
+                <element signature="e#82433#82434#0" expanded="false" />
+                <element signature="method#nextLong#1;class#Scanner#0" expanded="false" />
+                <element signature="method#processFloatToken#0;class#Scanner#0" expanded="false" />
+                <element signature="method#hasNextFloat#0;class#Scanner#0" expanded="false" />
+                <element signature="method#nextFloat#0;class#Scanner#0" expanded="false" />
+                <element signature="method#hasNextDouble#0;class#Scanner#0" expanded="false" />
+                <element signature="method#nextDouble#0;class#Scanner#0" expanded="false" />
+                <element signature="e#92828#92829#0" expanded="false" />
+                <element signature="e#92882#92883#0" expanded="false" />
+                <element signature="method#hasNextBigInteger#1;class#Scanner#0" expanded="false" />
+                <element signature="e#94684#94685#0" expanded="false" />
+                <element signature="e#94735#94736#0" expanded="false" />
+                <element signature="method#nextBigInteger#1;class#Scanner#0" expanded="false" />
+                <element signature="method#hasNextBigDecimal#0;class#Scanner#0" expanded="false" />
+                <element signature="method#nextBigDecimal#0;class#Scanner#0" expanded="false" />
+                <element signature="method#reset#0;class#Scanner#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileInputStream.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="209" column="23" selection-start-line="209" selection-start-column="23" selection-end-line="209" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#14284#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="method#FileInputStream#0;class#FileInputStream#0" expanded="false" />
+                <element signature="method#FileInputStream#1;class#FileInputStream#0" expanded="false" />
+                <element signature="method#FileInputStream#2;class#FileInputStream#0" expanded="false" />
+                <element signature="method#read#0;class#FileInputStream#0" expanded="false" />
+                <element signature="method#read#1;class#FileInputStream#0" expanded="false" />
+                <element signature="method#read#2;class#FileInputStream#0" expanded="false" />
+                <element signature="method#close#0;class#FileInputStream#0" expanded="false" />
+                <element signature="method#close#0;class#11902:12016" expanded="false" />
+                <element signature="method#getFD#0;class#FileInputStream#0" expanded="false" />
+                <element signature="method#getChannel#0;class#FileInputStream#0" expanded="false" />
+                <element signature="initializer##0;class#FileInputStream#0" expanded="false" />
+                <element signature="method#finalize#0;class#FileInputStream#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Arrays.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3331" column="0" selection-start-line="3331" selection-start-column="0" selection-end-line="3331" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#227755#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#3370#3371#0" expanded="false" />
+                <element signature="e#3446#3447#0" expanded="false" />
+                <element signature="method#rangeCheck#0;class#Arrays#0" expanded="false" />
+                <element signature="e#5027#5028#0" expanded="false" />
+                <element signature="e#5098#5099#0" expanded="false" />
+                <element signature="method#sort#1;class#Arrays#0" expanded="false" />
+                <element signature="e#6903#6904#0" expanded="false" />
+                <element signature="e#6974#6975#0" expanded="false" />
+                <element signature="method#sort#3;class#Arrays#0" expanded="false" />
+                <element signature="e#8781#8782#0" expanded="false" />
+                <element signature="e#8852#8853#0" expanded="false" />
+                <element signature="method#sort#5;class#Arrays#0" expanded="false" />
+                <element signature="e#10659#10660#0" expanded="false" />
+                <element signature="e#10730#10731#0" expanded="false" />
+                <element signature="method#sort#7;class#Arrays#0" expanded="false" />
+                <element signature="e#12536#12537#0" expanded="false" />
+                <element signature="e#12595#12596#0" expanded="false" />
+                <element signature="method#sort#9;class#Arrays#0" expanded="false" />
+                <element signature="e#14928#14929#0" expanded="false" />
+                <element signature="e#14999#15000#0" expanded="false" />
+                <element signature="method#sort#11;class#Arrays#0" expanded="false" />
+                <element signature="e#17889#17890#0" expanded="false" />
+                <element signature="e#17960#17961#0" expanded="false" />
+                <element signature="method#sort#13;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#0;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#1;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#2;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#3;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#4;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#5;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#6;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#7;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#8;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#9;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#10;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#11;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#12;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#13;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#14;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#15;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#16;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSort#17;class#Arrays#0" expanded="false" />
+                <element signature="method#sort#14;class#Arrays#0" expanded="false" />
+                <element signature="method#legacyMergeSort#0;class#Arrays#0" expanded="false" />
+                <element signature="method#sort#15;class#Arrays#0" expanded="false" />
+                <element signature="method#legacyMergeSort#1;class#Arrays#0" expanded="false" />
+                <element signature="method#mergeSort#0;class#Arrays#0" expanded="false" />
+                <element signature="method#swap#0;class#Arrays#0" expanded="false" />
+                <element signature="method#sort#16;class#Arrays#0" expanded="false" />
+                <element signature="method#legacyMergeSort#2;class#Arrays#0" expanded="false" />
+                <element signature="method#sort#17;class#Arrays#0" expanded="false" />
+                <element signature="method#legacyMergeSort#3;class#Arrays#0" expanded="false" />
+                <element signature="method#mergeSort#1;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelPrefix#0;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelPrefix#1;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelPrefix#2;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelPrefix#3;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelPrefix#4;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelPrefix#5;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelPrefix#6;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelPrefix#7;class#Arrays#0" expanded="false" />
+                <element signature="e#84738#84739#0" expanded="false" />
+                <element signature="e#84795#84796#0" expanded="false" />
+                <element signature="method#binarySearch#1;class#Arrays#0" expanded="false" />
+                <element signature="method#binarySearch0#0;class#Arrays#0" expanded="false" />
+                <element signature="e#88329#88330#0" expanded="false" />
+                <element signature="e#88386#88387#0" expanded="false" />
+                <element signature="method#binarySearch#3;class#Arrays#0" expanded="false" />
+                <element signature="method#binarySearch0#1;class#Arrays#0" expanded="false" />
+                <element signature="e#91921#91922#0" expanded="false" />
+                <element signature="e#91978#91979#0" expanded="false" />
+                <element signature="method#binarySearch#5;class#Arrays#0" expanded="false" />
+                <element signature="method#binarySearch0#2;class#Arrays#0" expanded="false" />
+                <element signature="e#95523#95524#0" expanded="false" />
+                <element signature="e#95580#95581#0" expanded="false" />
+                <element signature="method#binarySearch#7;class#Arrays#0" expanded="false" />
+                <element signature="method#binarySearch0#3;class#Arrays#0" expanded="false" />
+                <element signature="e#99118#99119#0" expanded="false" />
+                <element signature="e#99175#99176#0" expanded="false" />
+                <element signature="method#binarySearch#9;class#Arrays#0" expanded="false" />
+                <element signature="method#binarySearch0#4;class#Arrays#0" expanded="false" />
+                <element signature="e#102793#102794#0" expanded="false" />
+                <element signature="e#102850#102851#0" expanded="false" />
+                <element signature="method#binarySearch#11;class#Arrays#0" expanded="false" />
+                <element signature="method#binarySearch0#5;class#Arrays#0" expanded="false" />
+                <element signature="e#107069#107070#0" expanded="false" />
+                <element signature="e#107126#107127#0" expanded="false" />
+                <element signature="method#binarySearch#13;class#Arrays#0" expanded="false" />
+                <element signature="method#binarySearch0#6;class#Arrays#0" expanded="false" />
+                <element signature="e#111724#111725#0" expanded="false" />
+                <element signature="e#111781#111782#0" expanded="false" />
+                <element signature="method#binarySearch#15;class#Arrays#0" expanded="false" />
+                <element signature="method#binarySearch0#7;class#Arrays#0" expanded="false" />
+                <element signature="method#binarySearch#16;class#Arrays#0" expanded="false" />
+                <element signature="method#binarySearch#17;class#Arrays#0" expanded="false" />
+                <element signature="method#binarySearch0#8;class#Arrays#0" expanded="false" />
+                <element signature="method#equals#0;class#Arrays#0" expanded="false" />
+                <element signature="method#equals#1;class#Arrays#0" expanded="false" />
+                <element signature="method#equals#2;class#Arrays#0" expanded="false" />
+                <element signature="method#equals#3;class#Arrays#0" expanded="false" />
+                <element signature="method#equals#4;class#Arrays#0" expanded="false" />
+                <element signature="method#equals#5;class#Arrays#0" expanded="false" />
+                <element signature="method#equals#6;class#Arrays#0" expanded="false" />
+                <element signature="method#equals#7;class#Arrays#0" expanded="false" />
+                <element signature="method#equals#8;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#0;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#1;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#2;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#3;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#4;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#5;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#6;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#7;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#8;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#9;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#10;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#11;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#12;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#13;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#14;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#15;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#16;class#Arrays#0" expanded="false" />
+                <element signature="method#fill#17;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOf#0;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOf#1;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOf#2;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOf#3;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOf#4;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOf#5;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOf#7;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOf#8;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOf#9;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOfRange#0;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOfRange#1;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOfRange#2;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOfRange#3;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOfRange#4;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOfRange#5;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOfRange#6;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOfRange#7;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOfRange#8;class#Arrays#0" expanded="false" />
+                <element signature="method#copyOfRange#9;class#Arrays#0" expanded="false" />
+                <element signature="e#176922#176934#0" expanded="false" />
+                <element signature="e#177013#177014#0" expanded="false" />
+                <element signature="e#177054#177055#0" expanded="false" />
+                <element signature="e#177353#177354#0" expanded="false" />
+                <element signature="e#177410#177411#0" expanded="false" />
+                <element signature="e#177457#177458#0" expanded="false" />
+                <element signature="e#177496#177497#0" expanded="false" />
+                <element signature="e#177551#177552#0" expanded="false" />
+                <element signature="e#177591#177592#0" expanded="false" />
+                <element signature="e#177602#177611#0" expanded="false" />
+                <element signature="method#toArray#1;class#ArrayList#0;class#Arrays#0" expanded="false" />
+                <element signature="e#178082#178083#0" expanded="false" />
+                <element signature="e#178121#178122#0" expanded="false" />
+                <element signature="method#set#0;class#ArrayList#0;class#Arrays#0" expanded="false" />
+                <element signature="method#indexOf#0;class#ArrayList#0;class#Arrays#0" expanded="false" />
+                <element signature="e#178785#178786#0" expanded="false" />
+                <element signature="e#178832#178833#0" expanded="false" />
+                <element signature="e#178897#178898#0" expanded="false" />
+                <element signature="e#178976#178977#0" expanded="false" />
+                <element signature="method#forEach#0;class#ArrayList#0;class#Arrays#0" expanded="false" />
+                <element signature="method#replaceAll#0;class#ArrayList#0;class#Arrays#0" expanded="false" />
+                <element signature="e#179525#179526#0" expanded="false" />
+                <element signature="e#179566#179567#0" expanded="false" />
+                <element signature="method#hashCode#0;class#Arrays#0" expanded="false" />
+                <element signature="method#hashCode#1;class#Arrays#0" expanded="false" />
+                <element signature="method#hashCode#2;class#Arrays#0" expanded="false" />
+                <element signature="method#hashCode#3;class#Arrays#0" expanded="false" />
+                <element signature="method#hashCode#4;class#Arrays#0" expanded="false" />
+                <element signature="method#hashCode#5;class#Arrays#0" expanded="false" />
+                <element signature="method#hashCode#6;class#Arrays#0" expanded="false" />
+                <element signature="method#hashCode#7;class#Arrays#0" expanded="false" />
+                <element signature="method#hashCode#8;class#Arrays#0" expanded="false" />
+                <element signature="method#deepHashCode#0;class#Arrays#0" expanded="false" />
+                <element signature="method#deepEquals#0;class#Arrays#0" expanded="false" />
+                <element signature="method#deepEquals0#0;class#Arrays#0" expanded="false" />
+                <element signature="method#toString#0;class#Arrays#0" expanded="false" />
+                <element signature="method#toString#1;class#Arrays#0" expanded="false" />
+                <element signature="method#toString#2;class#Arrays#0" expanded="false" />
+                <element signature="method#toString#3;class#Arrays#0" expanded="false" />
+                <element signature="method#toString#4;class#Arrays#0" expanded="false" />
+                <element signature="method#toString#5;class#Arrays#0" expanded="false" />
+                <element signature="method#toString#6;class#Arrays#0" expanded="false" />
+                <element signature="method#toString#7;class#Arrays#0" expanded="false" />
+                <element signature="method#toString#8;class#Arrays#0" expanded="false" />
+                <element signature="method#deepToString#0;class#Arrays#0" expanded="false" />
+                <element signature="method#deepToString#1;class#Arrays#0" expanded="false" />
+                <element signature="method#setAll#0;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSetAll#0;class#Arrays#0" expanded="false" />
+                <element signature="method#setAll#1;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSetAll#1;class#Arrays#0" expanded="false" />
+                <element signature="method#setAll#2;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSetAll#2;class#Arrays#0" expanded="false" />
+                <element signature="method#setAll#3;class#Arrays#0" expanded="false" />
+                <element signature="method#parallelSetAll#3;class#Arrays#0" expanded="false" />
+                <element signature="method#spliterator#0;class#Arrays#0" expanded="false" />
+                <element signature="method#spliterator#1;class#Arrays#0" expanded="false" />
+                <element signature="method#spliterator#2;class#Arrays#0" expanded="false" />
+                <element signature="method#spliterator#3;class#Arrays#0" expanded="false" />
+                <element signature="method#spliterator#4;class#Arrays#0" expanded="false" />
+                <element signature="method#spliterator#5;class#Arrays#0" expanded="false" />
+                <element signature="method#spliterator#6;class#Arrays#0" expanded="false" />
+                <element signature="method#spliterator#7;class#Arrays#0" expanded="false" />
+                <element signature="e#223144#223145#0" expanded="false" />
+                <element signature="e#223197#223198#0" expanded="false" />
+                <element signature="method#stream#1;class#Arrays#0" expanded="false" />
+                <element signature="e#224394#224395#0" expanded="false" />
+                <element signature="e#224447#224448#0" expanded="false" />
+                <element signature="method#stream#3;class#Arrays#0" expanded="false" />
+                <element signature="e#225606#225607#0" expanded="false" />
+                <element signature="e#225659#225660#0" expanded="false" />
+                <element signature="method#stream#5;class#Arrays#0" expanded="false" />
+                <element signature="e#226830#226831#0" expanded="false" />
+                <element signature="e#226883#226884#0" expanded="false" />
+                <element signature="method#stream#7;class#Arrays#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransitionMatrix.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TransitionMatrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="80" column="49" selection-start-line="80" selection-start-column="49" selection-end-line="80" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="false" />
+                <element signature="class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="false" />
+                <element signature="method#add#0;class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+                <element signature="method#getProbability#0;class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+                <element signature="method#add#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+                <element signature="class#ProbabilityMap#0;class#TransitionMatrix#0" expanded="false" />
+                <element signature="e#1668#1669#0" expanded="true" />
+                <element signature="e#1706#1707#0" expanded="true" />
+                <element signature="e#1787#1788#0" expanded="true" />
+                <element signature="e#1821#1822#0" expanded="true" />
+                <element signature="method#randomNode#0;class#ProbabilityMap#0;class#TransitionMatrix#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/TransitionMatrix.java" />
+      </list>
+    </option>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="63" />
+    <option name="width" value="1920" />
+    <option name="height" value="1101" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MarkovChain2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MarkovChain2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MarkovChain2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MarkovChain2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MarkovChain2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="recentsLimit" value="5" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="MarkovChain2" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6dc15556-29cc-4745-aae4-35ff3f6442cc" name="Default" comment="" />
+      <created>1457472794151</created>
+      <option name="number" value="Default" />
+      <updated>1457472794151</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="63" width="1920" height="1101" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39940536" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903865" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="24" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="data" language="JAVA" custom="" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/util/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1537" column="0" selection-start-line="1537" selection-start-column="0" selection-end-line="1537" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#99893#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#13841#13842#0" expanded="false" />
+            <element signature="e#13890#13891#0" expanded="false" />
+            <element signature="e#13947#13948#0" expanded="false" />
+            <element signature="e#13999#14000#0" expanded="false" />
+            <element signature="method#boolPattern#0;class#Scanner#0" expanded="false" />
+            <element signature="method#buildIntegerPatternString#0;class#Scanner#0" expanded="false" />
+            <element signature="method#integerPattern#0;class#Scanner#0" expanded="false" />
+            <element signature="method#separatorPattern#0;class#Scanner#0" expanded="false" />
+            <element signature="method#linePattern#0;class#Scanner#0" expanded="false" />
+            <element signature="method#buildFloatAndDecimalPattern#0;class#Scanner#0" expanded="false" />
+            <element signature="method#floatPattern#0;class#Scanner#0" expanded="false" />
+            <element signature="method#decimalPattern#0;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#0;class#Scanner#0" expanded="false" />
+            <element signature="e#21196#21197#0" expanded="false" />
+            <element signature="e#21278#21279#0" expanded="false" />
+            <element signature="e#21679#21680#0" expanded="false" />
+            <element signature="e#21750#21751#0" expanded="false" />
+            <element signature="method#Scanner#3;class#Scanner#0" expanded="false" />
+            <element signature="method#toCharset#0;class#Scanner#0" expanded="false" />
+            <element signature="method#makeReadable#0;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#4;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#5;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#6;class#Scanner#0" expanded="false" />
+            <element signature="method#toDecoder#0;class#Scanner#0" expanded="false" />
+            <element signature="method#makeReadable#1;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#7;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#8;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#9;class#Scanner#0" expanded="false" />
+            <element signature="e#26907#26908#0" expanded="false" />
+            <element signature="e#26973#26974#0" expanded="false" />
+            <element signature="method#Scanner#11;class#Scanner#0" expanded="false" />
+            <element signature="method#makeReadable#2;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#12;class#Scanner#0" expanded="false" />
+            <element signature="e#28403#28404#0" expanded="false" />
+            <element signature="e#28450#28451#0" expanded="false" />
+            <element signature="method#revertState#0;class#Scanner#0" expanded="false" />
+            <element signature="method#revertState#1;class#Scanner#0" expanded="false" />
+            <element signature="method#cacheResult#0;class#Scanner#0" expanded="false" />
+            <element signature="method#cacheResult#1;class#Scanner#0" expanded="false" />
+            <element signature="method#clearCaches#0;class#Scanner#0" expanded="false" />
+            <element signature="method#getCachedResult#0;class#Scanner#0" expanded="false" />
+            <element signature="method#useTypeCache#0;class#Scanner#0" expanded="false" />
+            <element signature="method#readInput#0;class#Scanner#0" expanded="false" />
+            <element signature="method#makeSpace#0;class#Scanner#0" expanded="false" />
+            <element signature="method#translateSavedIndexes#0;class#Scanner#0" expanded="false" />
+            <element signature="method#throwFor#0;class#Scanner#0" expanded="false" />
+            <element signature="method#hasTokenInBuffer#0;class#Scanner#0" expanded="false" />
+            <element signature="method#getCompleteTokenInBuffer#0;class#Scanner#0" expanded="false" />
+            <element signature="method#findPatternInBuffer#0;class#Scanner#0" expanded="false" />
+            <element signature="method#matchPatternInBuffer#0;class#Scanner#0" expanded="false" />
+            <element signature="method#ensureOpen#0;class#Scanner#0" expanded="false" />
+            <element signature="method#close#0;class#Scanner#0" expanded="false" />
+            <element signature="e#40917#40918#0" expanded="false" />
+            <element signature="e#40953#40954#0" expanded="false" />
+            <element signature="e#41173#41174#0" expanded="false" />
+            <element signature="e#41208#41209#0" expanded="false" />
+            <element signature="method#useDelimiter#0;class#Scanner#0" expanded="false" />
+            <element signature="method#useDelimiter#1;class#Scanner#0" expanded="false" />
+            <element signature="e#42513#42514#0" expanded="false" />
+            <element signature="e#42547#42548#0" expanded="false" />
+            <element signature="method#useLocale#0;class#Scanner#0" expanded="false" />
+            <element signature="e#44951#44952#0" expanded="false" />
+            <element signature="e#44991#44992#0" expanded="false" />
+            <element signature="method#useRadix#0;class#Scanner#0" expanded="false" />
+            <element signature="method#setRadix#0;class#Scanner#0" expanded="false" />
+            <element signature="method#match#0;class#Scanner#0" expanded="false" />
+            <element signature="method#toString#0;class#Scanner#0" expanded="false" />
+            <element signature="method#hasNext#0;class#Scanner#0" expanded="false" />
+            <element signature="method#next#0;class#Scanner#0" expanded="false" />
+            <element signature="e#50783#50784#0" expanded="false" />
+            <element signature="e#50840#50841#0" expanded="false" />
+            <element signature="e#51489#51490#0" expanded="false" />
+            <element signature="e#51550#51551#0" expanded="false" />
+            <element signature="e#52228#52229#0" expanded="false" />
+            <element signature="e#52286#52287#0" expanded="false" />
+            <element signature="method#hasNext#2;class#Scanner#0" expanded="false" />
+            <element signature="method#next#2;class#Scanner#0" expanded="false" />
+            <element signature="method#hasNextLine#0;class#Scanner#0" expanded="false" />
+            <element signature="e#57377#57378#0" expanded="false" />
+            <element signature="e#57441#57442#0" expanded="false" />
+            <element signature="method#findInLine#1;class#Scanner#0" expanded="false" />
+            <element signature="method#findWithinHorizon#0;class#Scanner#0" expanded="false" />
+            <element signature="method#findWithinHorizon#1;class#Scanner#0" expanded="false" />
+            <element signature="method#skip#0;class#Scanner#0" expanded="false" />
+            <element signature="e#64742#64743#0" expanded="false" />
+            <element signature="e#64800#64801#0" expanded="false" />
+            <element signature="e#65330#65331#0" expanded="false" />
+            <element signature="e#65375#65376#0" expanded="false" />
+            <element signature="method#nextBoolean#0;class#Scanner#0" expanded="false" />
+            <element signature="e#66525#66526#0" expanded="false" />
+            <element signature="e#66573#66574#0" expanded="false" />
+            <element signature="method#hasNextByte#1;class#Scanner#0" expanded="false" />
+            <element signature="e#68265#68266#0" expanded="false" />
+            <element signature="e#68311#68312#0" expanded="false" />
+            <element signature="method#nextByte#1;class#Scanner#0" expanded="false" />
+            <element signature="e#70929#70930#0" expanded="false" />
+            <element signature="e#70978#70979#0" expanded="false" />
+            <element signature="method#hasNextShort#1;class#Scanner#0" expanded="false" />
+            <element signature="e#72706#72707#0" expanded="false" />
+            <element signature="e#72752#72753#0" expanded="false" />
+            <element signature="method#nextShort#1;class#Scanner#0" expanded="false" />
+            <element signature="e#75360#75361#0" expanded="false" />
+            <element signature="e#75407#75408#0" expanded="false" />
+            <element signature="method#hasNextInt#1;class#Scanner#0" expanded="false" />
+            <element signature="method#processIntegerToken#0;class#Scanner#0" expanded="false" />
+            <element signature="e#78006#78007#0" expanded="false" />
+            <element signature="e#78050#78051#0" expanded="false" />
+            <element signature="method#nextInt#1;class#Scanner#0" expanded="false" />
+            <element signature="e#80648#80649#0" expanded="false" />
+            <element signature="e#80696#80697#0" expanded="false" />
+            <element signature="method#hasNextLong#1;class#Scanner#0" expanded="false" />
+            <element signature="e#82388#82389#0" expanded="false" />
+            <element signature="e#82433#82434#0" expanded="false" />
+            <element signature="method#nextLong#1;class#Scanner#0" expanded="false" />
+            <element signature="method#processFloatToken#0;class#Scanner#0" expanded="false" />
+            <element signature="method#hasNextFloat#0;class#Scanner#0" expanded="false" />
+            <element signature="method#nextFloat#0;class#Scanner#0" expanded="false" />
+            <element signature="method#hasNextDouble#0;class#Scanner#0" expanded="false" />
+            <element signature="method#nextDouble#0;class#Scanner#0" expanded="false" />
+            <element signature="e#92828#92829#0" expanded="false" />
+            <element signature="e#92882#92883#0" expanded="false" />
+            <element signature="method#hasNextBigInteger#1;class#Scanner#0" expanded="false" />
+            <element signature="e#94684#94685#0" expanded="false" />
+            <element signature="e#94735#94736#0" expanded="false" />
+            <element signature="method#nextBigInteger#1;class#Scanner#0" expanded="false" />
+            <element signature="method#hasNextBigDecimal#0;class#Scanner#0" expanded="false" />
+            <element signature="method#nextBigDecimal#0;class#Scanner#0" expanded="false" />
+            <element signature="method#reset#0;class#Scanner#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="209" column="23" selection-start-line="209" selection-start-column="23" selection-end-line="209" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#14284#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="method#FileInputStream#0;class#FileInputStream#0" expanded="false" />
+            <element signature="method#FileInputStream#1;class#FileInputStream#0" expanded="false" />
+            <element signature="method#FileInputStream#2;class#FileInputStream#0" expanded="false" />
+            <element signature="method#read#0;class#FileInputStream#0" expanded="false" />
+            <element signature="method#read#1;class#FileInputStream#0" expanded="false" />
+            <element signature="method#read#2;class#FileInputStream#0" expanded="false" />
+            <element signature="method#close#0;class#FileInputStream#0" expanded="false" />
+            <element signature="method#close#0;class#11902:12016" expanded="false" />
+            <element signature="method#getFD#0;class#FileInputStream#0" expanded="false" />
+            <element signature="method#getChannel#0;class#FileInputStream#0" expanded="false" />
+            <element signature="initializer##0;class#FileInputStream#0" expanded="false" />
+            <element signature="method#finalize#0;class#FileInputStream#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3331" column="0" selection-start-line="3331" selection-start-column="0" selection-end-line="3331" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#227755#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3370#3371#0" expanded="false" />
+            <element signature="e#3446#3447#0" expanded="false" />
+            <element signature="method#rangeCheck#0;class#Arrays#0" expanded="false" />
+            <element signature="e#5027#5028#0" expanded="false" />
+            <element signature="e#5098#5099#0" expanded="false" />
+            <element signature="method#sort#1;class#Arrays#0" expanded="false" />
+            <element signature="e#6903#6904#0" expanded="false" />
+            <element signature="e#6974#6975#0" expanded="false" />
+            <element signature="method#sort#3;class#Arrays#0" expanded="false" />
+            <element signature="e#8781#8782#0" expanded="false" />
+            <element signature="e#8852#8853#0" expanded="false" />
+            <element signature="method#sort#5;class#Arrays#0" expanded="false" />
+            <element signature="e#10659#10660#0" expanded="false" />
+            <element signature="e#10730#10731#0" expanded="false" />
+            <element signature="method#sort#7;class#Arrays#0" expanded="false" />
+            <element signature="e#12536#12537#0" expanded="false" />
+            <element signature="e#12595#12596#0" expanded="false" />
+            <element signature="method#sort#9;class#Arrays#0" expanded="false" />
+            <element signature="e#14928#14929#0" expanded="false" />
+            <element signature="e#14999#15000#0" expanded="false" />
+            <element signature="method#sort#11;class#Arrays#0" expanded="false" />
+            <element signature="e#17889#17890#0" expanded="false" />
+            <element signature="e#17960#17961#0" expanded="false" />
+            <element signature="method#sort#13;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#0;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#1;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#2;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#3;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#4;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#5;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#6;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#7;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#8;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#9;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#10;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#11;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#12;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#13;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#14;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#15;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#16;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#17;class#Arrays#0" expanded="false" />
+            <element signature="method#sort#14;class#Arrays#0" expanded="false" />
+            <element signature="method#legacyMergeSort#0;class#Arrays#0" expanded="false" />
+            <element signature="method#sort#15;class#Arrays#0" expanded="false" />
+            <element signature="method#legacyMergeSort#1;class#Arrays#0" expanded="false" />
+            <element signature="method#mergeSort#0;class#Arrays#0" expanded="false" />
+            <element signature="method#swap#0;class#Arrays#0" expanded="false" />
+            <element signature="method#sort#16;class#Arrays#0" expanded="false" />
+            <element signature="method#legacyMergeSort#2;class#Arrays#0" expanded="false" />
+            <element signature="method#sort#17;class#Arrays#0" expanded="false" />
+            <element signature="method#legacyMergeSort#3;class#Arrays#0" expanded="false" />
+            <element signature="method#mergeSort#1;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#0;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#1;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#2;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#3;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#4;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#5;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#6;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#7;class#Arrays#0" expanded="false" />
+            <element signature="e#84738#84739#0" expanded="false" />
+            <element signature="e#84795#84796#0" expanded="false" />
+            <element signature="method#binarySearch#1;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#0;class#Arrays#0" expanded="false" />
+            <element signature="e#88329#88330#0" expanded="false" />
+            <element signature="e#88386#88387#0" expanded="false" />
+            <element signature="method#binarySearch#3;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#1;class#Arrays#0" expanded="false" />
+            <element signature="e#91921#91922#0" expanded="false" />
+            <element signature="e#91978#91979#0" expanded="false" />
+            <element signature="method#binarySearch#5;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#2;class#Arrays#0" expanded="false" />
+            <element signature="e#95523#95524#0" expanded="false" />
+            <element signature="e#95580#95581#0" expanded="false" />
+            <element signature="method#binarySearch#7;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#3;class#Arrays#0" expanded="false" />
+            <element signature="e#99118#99119#0" expanded="false" />
+            <element signature="e#99175#99176#0" expanded="false" />
+            <element signature="method#binarySearch#9;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#4;class#Arrays#0" expanded="false" />
+            <element signature="e#102793#102794#0" expanded="false" />
+            <element signature="e#102850#102851#0" expanded="false" />
+            <element signature="method#binarySearch#11;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#5;class#Arrays#0" expanded="false" />
+            <element signature="e#107069#107070#0" expanded="false" />
+            <element signature="e#107126#107127#0" expanded="false" />
+            <element signature="method#binarySearch#13;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#6;class#Arrays#0" expanded="false" />
+            <element signature="e#111724#111725#0" expanded="false" />
+            <element signature="e#111781#111782#0" expanded="false" />
+            <element signature="method#binarySearch#15;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#7;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch#16;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch#17;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#8;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#0;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#1;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#2;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#3;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#4;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#5;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#6;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#7;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#8;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#0;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#1;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#2;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#3;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#4;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#5;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#6;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#7;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#8;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#9;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#10;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#11;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#12;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#13;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#14;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#15;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#16;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#17;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#0;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#1;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#2;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#3;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#4;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#5;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#7;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#8;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#9;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#0;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#1;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#2;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#3;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#4;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#5;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#6;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#7;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#8;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#9;class#Arrays#0" expanded="false" />
+            <element signature="e#176922#176934#0" expanded="false" />
+            <element signature="e#177013#177014#0" expanded="false" />
+            <element signature="e#177054#177055#0" expanded="false" />
+            <element signature="e#177353#177354#0" expanded="false" />
+            <element signature="e#177410#177411#0" expanded="false" />
+            <element signature="e#177457#177458#0" expanded="false" />
+            <element signature="e#177496#177497#0" expanded="false" />
+            <element signature="e#177551#177552#0" expanded="false" />
+            <element signature="e#177591#177592#0" expanded="false" />
+            <element signature="e#177602#177611#0" expanded="false" />
+            <element signature="method#toArray#1;class#ArrayList#0;class#Arrays#0" expanded="false" />
+            <element signature="e#178082#178083#0" expanded="false" />
+            <element signature="e#178121#178122#0" expanded="false" />
+            <element signature="method#set#0;class#ArrayList#0;class#Arrays#0" expanded="false" />
+            <element signature="method#indexOf#0;class#ArrayList#0;class#Arrays#0" expanded="false" />
+            <element signature="e#178785#178786#0" expanded="false" />
+            <element signature="e#178832#178833#0" expanded="false" />
+            <element signature="e#178897#178898#0" expanded="false" />
+            <element signature="e#178976#178977#0" expanded="false" />
+            <element signature="method#forEach#0;class#ArrayList#0;class#Arrays#0" expanded="false" />
+            <element signature="method#replaceAll#0;class#ArrayList#0;class#Arrays#0" expanded="false" />
+            <element signature="e#179525#179526#0" expanded="false" />
+            <element signature="e#179566#179567#0" expanded="false" />
+            <element signature="method#hashCode#0;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#1;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#2;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#3;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#4;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#5;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#6;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#7;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#8;class#Arrays#0" expanded="false" />
+            <element signature="method#deepHashCode#0;class#Arrays#0" expanded="false" />
+            <element signature="method#deepEquals#0;class#Arrays#0" expanded="false" />
+            <element signature="method#deepEquals0#0;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#0;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#1;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#2;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#3;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#4;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#5;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#6;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#7;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#8;class#Arrays#0" expanded="false" />
+            <element signature="method#deepToString#0;class#Arrays#0" expanded="false" />
+            <element signature="method#deepToString#1;class#Arrays#0" expanded="false" />
+            <element signature="method#setAll#0;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSetAll#0;class#Arrays#0" expanded="false" />
+            <element signature="method#setAll#1;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSetAll#1;class#Arrays#0" expanded="false" />
+            <element signature="method#setAll#2;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSetAll#2;class#Arrays#0" expanded="false" />
+            <element signature="method#setAll#3;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSetAll#3;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#0;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#1;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#2;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#3;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#4;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#5;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#6;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#7;class#Arrays#0" expanded="false" />
+            <element signature="e#223144#223145#0" expanded="false" />
+            <element signature="e#223197#223198#0" expanded="false" />
+            <element signature="method#stream#1;class#Arrays#0" expanded="false" />
+            <element signature="e#224394#224395#0" expanded="false" />
+            <element signature="e#224447#224448#0" expanded="false" />
+            <element signature="method#stream#3;class#Arrays#0" expanded="false" />
+            <element signature="e#225606#225607#0" expanded="false" />
+            <element signature="e#225659#225660#0" expanded="false" />
+            <element signature="method#stream#5;class#Arrays#0" expanded="false" />
+            <element signature="e#226830#226831#0" expanded="false" />
+            <element signature="e#226883#226884#0" expanded="false" />
+            <element signature="method#stream#7;class#Arrays#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TransitionMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="false" />
+            <element signature="class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="false" />
+            <element signature="method#add#0;class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+            <element signature="method#getProbability#0;class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+            <element signature="method#add#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+            <element signature="class#ProbabilityMap#0;class#TransitionMatrix#0" expanded="false" />
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1706#1707#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
+            <element signature="e#1821#1822#0" expanded="true" />
+            <element signature="method#randomNode#0;class#ProbabilityMap#0;class#TransitionMatrix#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TransitionMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="false" />
+            <element signature="class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="false" />
+            <element signature="method#add#0;class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+            <element signature="method#getProbability#0;class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+            <element signature="method#add#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+            <element signature="class#ProbabilityMap#0;class#TransitionMatrix#0" expanded="false" />
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1706#1707#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
+            <element signature="e#1821#1822#0" expanded="true" />
+            <element signature="method#randomNode#0;class#ProbabilityMap#0;class#TransitionMatrix#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TransitionMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="false" />
+            <element signature="class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="false" />
+            <element signature="method#add#0;class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+            <element signature="method#getProbability#0;class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+            <element signature="method#add#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+            <element signature="class#ProbabilityMap#0;class#TransitionMatrix#0" expanded="false" />
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1706#1707#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
+            <element signature="e#1821#1822#0" expanded="true" />
+            <element signature="method#randomNode#0;class#ProbabilityMap#0;class#TransitionMatrix#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3331" column="0" selection-start-line="3331" selection-start-column="0" selection-end-line="3331" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#227755#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3370#3371#0" expanded="false" />
+            <element signature="e#3446#3447#0" expanded="false" />
+            <element signature="method#rangeCheck#0;class#Arrays#0" expanded="false" />
+            <element signature="e#5027#5028#0" expanded="false" />
+            <element signature="e#5098#5099#0" expanded="false" />
+            <element signature="method#sort#1;class#Arrays#0" expanded="false" />
+            <element signature="e#6903#6904#0" expanded="false" />
+            <element signature="e#6974#6975#0" expanded="false" />
+            <element signature="method#sort#3;class#Arrays#0" expanded="false" />
+            <element signature="e#8781#8782#0" expanded="false" />
+            <element signature="e#8852#8853#0" expanded="false" />
+            <element signature="method#sort#5;class#Arrays#0" expanded="false" />
+            <element signature="e#10659#10660#0" expanded="false" />
+            <element signature="e#10730#10731#0" expanded="false" />
+            <element signature="method#sort#7;class#Arrays#0" expanded="false" />
+            <element signature="e#12536#12537#0" expanded="false" />
+            <element signature="e#12595#12596#0" expanded="false" />
+            <element signature="method#sort#9;class#Arrays#0" expanded="false" />
+            <element signature="e#14928#14929#0" expanded="false" />
+            <element signature="e#14999#15000#0" expanded="false" />
+            <element signature="method#sort#11;class#Arrays#0" expanded="false" />
+            <element signature="e#17889#17890#0" expanded="false" />
+            <element signature="e#17960#17961#0" expanded="false" />
+            <element signature="method#sort#13;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#0;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#1;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#2;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#3;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#4;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#5;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#6;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#7;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#8;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#9;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#10;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#11;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#12;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#13;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#14;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#15;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#16;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSort#17;class#Arrays#0" expanded="false" />
+            <element signature="method#sort#14;class#Arrays#0" expanded="false" />
+            <element signature="method#legacyMergeSort#0;class#Arrays#0" expanded="false" />
+            <element signature="method#sort#15;class#Arrays#0" expanded="false" />
+            <element signature="method#legacyMergeSort#1;class#Arrays#0" expanded="false" />
+            <element signature="method#mergeSort#0;class#Arrays#0" expanded="false" />
+            <element signature="method#swap#0;class#Arrays#0" expanded="false" />
+            <element signature="method#sort#16;class#Arrays#0" expanded="false" />
+            <element signature="method#legacyMergeSort#2;class#Arrays#0" expanded="false" />
+            <element signature="method#sort#17;class#Arrays#0" expanded="false" />
+            <element signature="method#legacyMergeSort#3;class#Arrays#0" expanded="false" />
+            <element signature="method#mergeSort#1;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#0;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#1;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#2;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#3;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#4;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#5;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#6;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelPrefix#7;class#Arrays#0" expanded="false" />
+            <element signature="e#84738#84739#0" expanded="false" />
+            <element signature="e#84795#84796#0" expanded="false" />
+            <element signature="method#binarySearch#1;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#0;class#Arrays#0" expanded="false" />
+            <element signature="e#88329#88330#0" expanded="false" />
+            <element signature="e#88386#88387#0" expanded="false" />
+            <element signature="method#binarySearch#3;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#1;class#Arrays#0" expanded="false" />
+            <element signature="e#91921#91922#0" expanded="false" />
+            <element signature="e#91978#91979#0" expanded="false" />
+            <element signature="method#binarySearch#5;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#2;class#Arrays#0" expanded="false" />
+            <element signature="e#95523#95524#0" expanded="false" />
+            <element signature="e#95580#95581#0" expanded="false" />
+            <element signature="method#binarySearch#7;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#3;class#Arrays#0" expanded="false" />
+            <element signature="e#99118#99119#0" expanded="false" />
+            <element signature="e#99175#99176#0" expanded="false" />
+            <element signature="method#binarySearch#9;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#4;class#Arrays#0" expanded="false" />
+            <element signature="e#102793#102794#0" expanded="false" />
+            <element signature="e#102850#102851#0" expanded="false" />
+            <element signature="method#binarySearch#11;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#5;class#Arrays#0" expanded="false" />
+            <element signature="e#107069#107070#0" expanded="false" />
+            <element signature="e#107126#107127#0" expanded="false" />
+            <element signature="method#binarySearch#13;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#6;class#Arrays#0" expanded="false" />
+            <element signature="e#111724#111725#0" expanded="false" />
+            <element signature="e#111781#111782#0" expanded="false" />
+            <element signature="method#binarySearch#15;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#7;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch#16;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch#17;class#Arrays#0" expanded="false" />
+            <element signature="method#binarySearch0#8;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#0;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#1;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#2;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#3;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#4;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#5;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#6;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#7;class#Arrays#0" expanded="false" />
+            <element signature="method#equals#8;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#0;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#1;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#2;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#3;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#4;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#5;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#6;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#7;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#8;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#9;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#10;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#11;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#12;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#13;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#14;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#15;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#16;class#Arrays#0" expanded="false" />
+            <element signature="method#fill#17;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#0;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#1;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#2;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#3;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#4;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#5;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#7;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#8;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOf#9;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#0;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#1;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#2;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#3;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#4;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#5;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#6;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#7;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#8;class#Arrays#0" expanded="false" />
+            <element signature="method#copyOfRange#9;class#Arrays#0" expanded="false" />
+            <element signature="e#176922#176934#0" expanded="false" />
+            <element signature="e#177013#177014#0" expanded="false" />
+            <element signature="e#177054#177055#0" expanded="false" />
+            <element signature="e#177353#177354#0" expanded="false" />
+            <element signature="e#177410#177411#0" expanded="false" />
+            <element signature="e#177457#177458#0" expanded="false" />
+            <element signature="e#177496#177497#0" expanded="false" />
+            <element signature="e#177551#177552#0" expanded="false" />
+            <element signature="e#177591#177592#0" expanded="false" />
+            <element signature="e#177602#177611#0" expanded="false" />
+            <element signature="method#toArray#1;class#ArrayList#0;class#Arrays#0" expanded="false" />
+            <element signature="e#178082#178083#0" expanded="false" />
+            <element signature="e#178121#178122#0" expanded="false" />
+            <element signature="method#set#0;class#ArrayList#0;class#Arrays#0" expanded="false" />
+            <element signature="method#indexOf#0;class#ArrayList#0;class#Arrays#0" expanded="false" />
+            <element signature="e#178785#178786#0" expanded="false" />
+            <element signature="e#178832#178833#0" expanded="false" />
+            <element signature="e#178897#178898#0" expanded="false" />
+            <element signature="e#178976#178977#0" expanded="false" />
+            <element signature="method#forEach#0;class#ArrayList#0;class#Arrays#0" expanded="false" />
+            <element signature="method#replaceAll#0;class#ArrayList#0;class#Arrays#0" expanded="false" />
+            <element signature="e#179525#179526#0" expanded="false" />
+            <element signature="e#179566#179567#0" expanded="false" />
+            <element signature="method#hashCode#0;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#1;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#2;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#3;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#4;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#5;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#6;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#7;class#Arrays#0" expanded="false" />
+            <element signature="method#hashCode#8;class#Arrays#0" expanded="false" />
+            <element signature="method#deepHashCode#0;class#Arrays#0" expanded="false" />
+            <element signature="method#deepEquals#0;class#Arrays#0" expanded="false" />
+            <element signature="method#deepEquals0#0;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#0;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#1;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#2;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#3;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#4;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#5;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#6;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#7;class#Arrays#0" expanded="false" />
+            <element signature="method#toString#8;class#Arrays#0" expanded="false" />
+            <element signature="method#deepToString#0;class#Arrays#0" expanded="false" />
+            <element signature="method#deepToString#1;class#Arrays#0" expanded="false" />
+            <element signature="method#setAll#0;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSetAll#0;class#Arrays#0" expanded="false" />
+            <element signature="method#setAll#1;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSetAll#1;class#Arrays#0" expanded="false" />
+            <element signature="method#setAll#2;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSetAll#2;class#Arrays#0" expanded="false" />
+            <element signature="method#setAll#3;class#Arrays#0" expanded="false" />
+            <element signature="method#parallelSetAll#3;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#0;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#1;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#2;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#3;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#4;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#5;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#6;class#Arrays#0" expanded="false" />
+            <element signature="method#spliterator#7;class#Arrays#0" expanded="false" />
+            <element signature="e#223144#223145#0" expanded="false" />
+            <element signature="e#223197#223198#0" expanded="false" />
+            <element signature="method#stream#1;class#Arrays#0" expanded="false" />
+            <element signature="e#224394#224395#0" expanded="false" />
+            <element signature="e#224447#224448#0" expanded="false" />
+            <element signature="method#stream#3;class#Arrays#0" expanded="false" />
+            <element signature="e#225606#225607#0" expanded="false" />
+            <element signature="e#225659#225660#0" expanded="false" />
+            <element signature="method#stream#5;class#Arrays#0" expanded="false" />
+            <element signature="e#226830#226831#0" expanded="false" />
+            <element signature="e#226883#226884#0" expanded="false" />
+            <element signature="method#stream#7;class#Arrays#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="209" column="23" selection-start-line="209" selection-start-column="23" selection-end-line="209" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#14284#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="method#FileInputStream#0;class#FileInputStream#0" expanded="false" />
+            <element signature="method#FileInputStream#1;class#FileInputStream#0" expanded="false" />
+            <element signature="method#FileInputStream#2;class#FileInputStream#0" expanded="false" />
+            <element signature="method#read#0;class#FileInputStream#0" expanded="false" />
+            <element signature="method#read#1;class#FileInputStream#0" expanded="false" />
+            <element signature="method#read#2;class#FileInputStream#0" expanded="false" />
+            <element signature="method#close#0;class#FileInputStream#0" expanded="false" />
+            <element signature="method#close#0;class#11902:12016" expanded="false" />
+            <element signature="method#getFD#0;class#FileInputStream#0" expanded="false" />
+            <element signature="method#getChannel#0;class#FileInputStream#0" expanded="false" />
+            <element signature="initializer##0;class#FileInputStream#0" expanded="false" />
+            <element signature="method#finalize#0;class#FileInputStream#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/util/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1537" column="0" selection-start-line="1537" selection-start-column="0" selection-end-line="1537" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#99893#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#13841#13842#0" expanded="false" />
+            <element signature="e#13890#13891#0" expanded="false" />
+            <element signature="e#13947#13948#0" expanded="false" />
+            <element signature="e#13999#14000#0" expanded="false" />
+            <element signature="method#boolPattern#0;class#Scanner#0" expanded="false" />
+            <element signature="method#buildIntegerPatternString#0;class#Scanner#0" expanded="false" />
+            <element signature="method#integerPattern#0;class#Scanner#0" expanded="false" />
+            <element signature="method#separatorPattern#0;class#Scanner#0" expanded="false" />
+            <element signature="method#linePattern#0;class#Scanner#0" expanded="false" />
+            <element signature="method#buildFloatAndDecimalPattern#0;class#Scanner#0" expanded="false" />
+            <element signature="method#floatPattern#0;class#Scanner#0" expanded="false" />
+            <element signature="method#decimalPattern#0;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#0;class#Scanner#0" expanded="false" />
+            <element signature="e#21196#21197#0" expanded="false" />
+            <element signature="e#21278#21279#0" expanded="false" />
+            <element signature="e#21679#21680#0" expanded="false" />
+            <element signature="e#21750#21751#0" expanded="false" />
+            <element signature="method#Scanner#3;class#Scanner#0" expanded="false" />
+            <element signature="method#toCharset#0;class#Scanner#0" expanded="false" />
+            <element signature="method#makeReadable#0;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#4;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#5;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#6;class#Scanner#0" expanded="false" />
+            <element signature="method#toDecoder#0;class#Scanner#0" expanded="false" />
+            <element signature="method#makeReadable#1;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#7;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#8;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#9;class#Scanner#0" expanded="false" />
+            <element signature="e#26907#26908#0" expanded="false" />
+            <element signature="e#26973#26974#0" expanded="false" />
+            <element signature="method#Scanner#11;class#Scanner#0" expanded="false" />
+            <element signature="method#makeReadable#2;class#Scanner#0" expanded="false" />
+            <element signature="method#Scanner#12;class#Scanner#0" expanded="false" />
+            <element signature="e#28403#28404#0" expanded="false" />
+            <element signature="e#28450#28451#0" expanded="false" />
+            <element signature="method#revertState#0;class#Scanner#0" expanded="false" />
+            <element signature="method#revertState#1;class#Scanner#0" expanded="false" />
+            <element signature="method#cacheResult#0;class#Scanner#0" expanded="false" />
+            <element signature="method#cacheResult#1;class#Scanner#0" expanded="false" />
+            <element signature="method#clearCaches#0;class#Scanner#0" expanded="false" />
+            <element signature="method#getCachedResult#0;class#Scanner#0" expanded="false" />
+            <element signature="method#useTypeCache#0;class#Scanner#0" expanded="false" />
+            <element signature="method#readInput#0;class#Scanner#0" expanded="false" />
+            <element signature="method#makeSpace#0;class#Scanner#0" expanded="false" />
+            <element signature="method#translateSavedIndexes#0;class#Scanner#0" expanded="false" />
+            <element signature="method#throwFor#0;class#Scanner#0" expanded="false" />
+            <element signature="method#hasTokenInBuffer#0;class#Scanner#0" expanded="false" />
+            <element signature="method#getCompleteTokenInBuffer#0;class#Scanner#0" expanded="false" />
+            <element signature="method#findPatternInBuffer#0;class#Scanner#0" expanded="false" />
+            <element signature="method#matchPatternInBuffer#0;class#Scanner#0" expanded="false" />
+            <element signature="method#ensureOpen#0;class#Scanner#0" expanded="false" />
+            <element signature="method#close#0;class#Scanner#0" expanded="false" />
+            <element signature="e#40917#40918#0" expanded="false" />
+            <element signature="e#40953#40954#0" expanded="false" />
+            <element signature="e#41173#41174#0" expanded="false" />
+            <element signature="e#41208#41209#0" expanded="false" />
+            <element signature="method#useDelimiter#0;class#Scanner#0" expanded="false" />
+            <element signature="method#useDelimiter#1;class#Scanner#0" expanded="false" />
+            <element signature="e#42513#42514#0" expanded="false" />
+            <element signature="e#42547#42548#0" expanded="false" />
+            <element signature="method#useLocale#0;class#Scanner#0" expanded="false" />
+            <element signature="e#44951#44952#0" expanded="false" />
+            <element signature="e#44991#44992#0" expanded="false" />
+            <element signature="method#useRadix#0;class#Scanner#0" expanded="false" />
+            <element signature="method#setRadix#0;class#Scanner#0" expanded="false" />
+            <element signature="method#match#0;class#Scanner#0" expanded="false" />
+            <element signature="method#toString#0;class#Scanner#0" expanded="false" />
+            <element signature="method#hasNext#0;class#Scanner#0" expanded="false" />
+            <element signature="method#next#0;class#Scanner#0" expanded="false" />
+            <element signature="e#50783#50784#0" expanded="false" />
+            <element signature="e#50840#50841#0" expanded="false" />
+            <element signature="e#51489#51490#0" expanded="false" />
+            <element signature="e#51550#51551#0" expanded="false" />
+            <element signature="e#52228#52229#0" expanded="false" />
+            <element signature="e#52286#52287#0" expanded="false" />
+            <element signature="method#hasNext#2;class#Scanner#0" expanded="false" />
+            <element signature="method#next#2;class#Scanner#0" expanded="false" />
+            <element signature="method#hasNextLine#0;class#Scanner#0" expanded="false" />
+            <element signature="e#57377#57378#0" expanded="false" />
+            <element signature="e#57441#57442#0" expanded="false" />
+            <element signature="method#findInLine#1;class#Scanner#0" expanded="false" />
+            <element signature="method#findWithinHorizon#0;class#Scanner#0" expanded="false" />
+            <element signature="method#findWithinHorizon#1;class#Scanner#0" expanded="false" />
+            <element signature="method#skip#0;class#Scanner#0" expanded="false" />
+            <element signature="e#64742#64743#0" expanded="false" />
+            <element signature="e#64800#64801#0" expanded="false" />
+            <element signature="e#65330#65331#0" expanded="false" />
+            <element signature="e#65375#65376#0" expanded="false" />
+            <element signature="method#nextBoolean#0;class#Scanner#0" expanded="false" />
+            <element signature="e#66525#66526#0" expanded="false" />
+            <element signature="e#66573#66574#0" expanded="false" />
+            <element signature="method#hasNextByte#1;class#Scanner#0" expanded="false" />
+            <element signature="e#68265#68266#0" expanded="false" />
+            <element signature="e#68311#68312#0" expanded="false" />
+            <element signature="method#nextByte#1;class#Scanner#0" expanded="false" />
+            <element signature="e#70929#70930#0" expanded="false" />
+            <element signature="e#70978#70979#0" expanded="false" />
+            <element signature="method#hasNextShort#1;class#Scanner#0" expanded="false" />
+            <element signature="e#72706#72707#0" expanded="false" />
+            <element signature="e#72752#72753#0" expanded="false" />
+            <element signature="method#nextShort#1;class#Scanner#0" expanded="false" />
+            <element signature="e#75360#75361#0" expanded="false" />
+            <element signature="e#75407#75408#0" expanded="false" />
+            <element signature="method#hasNextInt#1;class#Scanner#0" expanded="false" />
+            <element signature="method#processIntegerToken#0;class#Scanner#0" expanded="false" />
+            <element signature="e#78006#78007#0" expanded="false" />
+            <element signature="e#78050#78051#0" expanded="false" />
+            <element signature="method#nextInt#1;class#Scanner#0" expanded="false" />
+            <element signature="e#80648#80649#0" expanded="false" />
+            <element signature="e#80696#80697#0" expanded="false" />
+            <element signature="method#hasNextLong#1;class#Scanner#0" expanded="false" />
+            <element signature="e#82388#82389#0" expanded="false" />
+            <element signature="e#82433#82434#0" expanded="false" />
+            <element signature="method#nextLong#1;class#Scanner#0" expanded="false" />
+            <element signature="method#processFloatToken#0;class#Scanner#0" expanded="false" />
+            <element signature="method#hasNextFloat#0;class#Scanner#0" expanded="false" />
+            <element signature="method#nextFloat#0;class#Scanner#0" expanded="false" />
+            <element signature="method#hasNextDouble#0;class#Scanner#0" expanded="false" />
+            <element signature="method#nextDouble#0;class#Scanner#0" expanded="false" />
+            <element signature="e#92828#92829#0" expanded="false" />
+            <element signature="e#92882#92883#0" expanded="false" />
+            <element signature="method#hasNextBigInteger#1;class#Scanner#0" expanded="false" />
+            <element signature="e#94684#94685#0" expanded="false" />
+            <element signature="e#94735#94736#0" expanded="false" />
+            <element signature="method#nextBigInteger#1;class#Scanner#0" expanded="false" />
+            <element signature="method#hasNextBigDecimal#0;class#Scanner#0" expanded="false" />
+            <element signature="method#nextBigDecimal#0;class#Scanner#0" expanded="false" />
+            <element signature="method#reset#0;class#Scanner#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TransitionMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="49" selection-start-line="80" selection-start-column="49" selection-end-line="80" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="false" />
+            <element signature="class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="false" />
+            <element signature="method#add#0;class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+            <element signature="method#getProbability#0;class#OccurrenceProbability#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+            <element signature="method#add#0;class#OccurrencesCount#0;class#TransitionMatrix#0" expanded="true" />
+            <element signature="class#ProbabilityMap#0;class#TransitionMatrix#0" expanded="false" />
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1706#1707#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
+            <element signature="e#1821#1822#0" expanded="true" />
+            <element signature="method#randomNode#0;class#ProbabilityMap#0;class#TransitionMatrix#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3058104">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
