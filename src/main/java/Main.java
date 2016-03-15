@@ -1,5 +1,3 @@
-import java.util.HashMap;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -19,6 +17,8 @@ public class Main {
         int level = 2;
 
         String currentWord = matrix.importData(input.toString(), level);
+
+        System.out.println(matrix.toJson());
         
         while (currentWord != null) {
             String word = "";

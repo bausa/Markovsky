@@ -1,3 +1,5 @@
+import com.google.gson.Gson;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
@@ -6,7 +8,21 @@ import java.util.Random;
  * Created by sambaumgarten on 3/8/16
  */
 public class TransitionMatrix<Node> {
-    HashMap<Node, OccurrencesCount> matrix = new HashMap<Node, OccurrencesCount>();
+    private final String VERSION = "0.1";
+
+    private HashMap<Node, OccurrencesCount> matrix = new HashMap<Node, OccurrencesCount>();
+
+    public TransitionMatrix() {}
+
+    /**
+     * Creates a transition matrix from the serialized JSON
+     * @param json the json to base the matrix on
+     * @return a filled transition matrix
+     */
+    public static TransitionMatrix importJson(String json) {
+        Gson gson = new Gson();
+        return gson.fromJson(json, TransitionMatrix.class);
+    }
 
     public class OccurrencesCount {
         private Node node;
@@ -121,5 +137,10 @@ public class TransitionMatrix<Node> {
     public ProbabilityMap probabilities(Node node) {
         if (!matrix.containsKey(node)) return null;
         return new ProbabilityMap(matrix.get(node).occurrenceProbabilityHashMap);
+    }
+
+    public String toJson() {
+        Gson gson = new Gson();
+        return gson.toJson(this, this.getClass());
     }
 }
