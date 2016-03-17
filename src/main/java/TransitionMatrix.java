@@ -14,14 +14,23 @@ public class TransitionMatrix<Node> {
 
     public TransitionMatrix() {}
 
+    public static class VersionMatchException extends Exception {
+        public VersionMatchException(String version) {
+            super("Data imported is of version " + version + ".  Expected version " + new TransitionMatrix<>().VERSION);
+        }
+    }
+
     /**
      * Creates a transition matrix from the serialized JSON
      * @param json the json to base the matrix on
      * @return a filled transition matrix
      */
-    public static TransitionMatrix importJson(String json) {
-        Gson gson = new Gson();
-        return gson.fromJson(json, TransitionMatrix.class);
+    public static TransitionMatrix importJson(String json) throws VersionMatchException {
+        TransitionMatrix matrix = new Gson().fromJson(json, TransitionMatrix.class);
+        if (matrix.VERSION != new TransitionMatrix().VERSION) {
+            throw new VersionMatchException(matrix.VERSION);
+        }
+        return matrix;
     }
 
     public class OccurrencesCount {
@@ -140,7 +149,6 @@ public class TransitionMatrix<Node> {
     }
 
     public String toJson() {
-        Gson gson = new Gson();
-        return gson.toJson(this, this.getClass());
+        return new Gson().toJson(this, this.getClass());
     }
 }
