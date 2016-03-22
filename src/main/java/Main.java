@@ -1,24 +1,25 @@
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 	    TransitionMatrix<String> matrix = new TransitionMatrix<>();
+        System.setIn(new BufferedInputStream(new FileInputStream("bible.txt")));
         Scanner scanner = new Scanner(System.in);
-
         StringBuilder input = new StringBuilder();
 
         String data = scanner.nextLine();
-        while (!data.equals("done")) {
+        while (scanner.hasNext()) {
             input.append(data + " ");
             data = scanner.nextLine();
         }
 
-        int level = 2;
+        int level = 2; // amount of frame
 
         String currentWord = matrix.importData(input.toString(), level);
-
-        System.out.println(matrix.toJson());
         
         while (currentWord != null) {
             String word = "";
@@ -33,6 +34,7 @@ public class Main {
             if (probabilityMap == null) break;
 
             currentWord = probabilityMap.randomNode();
+            System.out.println(currentWord);
         }
     }
 }
