@@ -27,25 +27,41 @@ public class TransitionMatrix<Node> {
      */
     public static TransitionMatrix importJson(String json) throws VersionMatchException {
         TransitionMatrix matrix = new Gson().fromJson(json, TransitionMatrix.class);
-        if (matrix.VERSION != new TransitionMatrix().VERSION) {
-            throw new VersionMatchException(matrix.VERSION);
-        }
+        if (matrix.VERSION != new TransitionMatrix().VERSION) throw new VersionMatchException(matrix.VERSION);
         return matrix;
     }
 
+    /**
+     * Stores the number of occurrences that a Node has and the probability it will goto any other Node
+     */
     public class OccurrencesCount {
+        // The node itself
         private Node node;
+
+        // The map from one of the node's neighbors to the probability it comes up (stored as occurrences)
         private HashMap<Node, OccurrenceProbability> occurrenceProbabilityHashMap = new HashMap<Node, OccurrenceProbability>();
+
+        // The total number of occurrences of the node
         private int totalCount;
 
+        /**
+         * The occurrence that a node will come up (from another node)
+         */
         public class OccurrenceProbability {
             private int count;
 
+            /**
+             * Adds another occurrence
+             */
             public void add() {
                 count++;
                 totalCount++;
             }
 
+            /**
+             * Calculates the probability that this node will come up (from the node that this class is nested in)
+             * @return The probability as a double
+             */
             public double getProbability() {
                 if (totalCount == 0) return 0;
                 return (double)count / totalCount;
@@ -56,10 +72,18 @@ public class TransitionMatrix<Node> {
             }
         }
 
+        /**
+         * Creates a new occurrence count from a Node
+         * @param node
+         */
         public OccurrencesCount(Node node) {
             this.node = node;
         }
 
+        /**
+         * Records an occurrence of a node and increments the neighbor node count
+         * @param occurringNode The node that is to be added (neighbor)
+         */
         public void add(Node occurringNode) {
             OccurrenceProbability occurrenceProbability;
             if (occurrenceProbabilityHashMap.containsKey(occurringNode)) occurrenceProbability = occurrenceProbabilityHashMap.get(occurringNode);
@@ -71,17 +95,33 @@ public class TransitionMatrix<Node> {
         }
     }
 
+    /**
+     * Stores the map from a Node to the probability of its neighbors occurring
+     */
     public class ProbabilityMap {
+        // The map itself
         private HashMap<Node, OccurrencesCount.OccurrenceProbability> map;
 
+        /**
+         * Creates a new Map from an existing HashMap
+         * @param map
+         */
         public ProbabilityMap(HashMap<Node, OccurrencesCount.OccurrenceProbability> map) {
             this.map = map;
         }
 
+        /**
+         * Gets the map from the ProbabilityMap wrapper
+         * @return
+         */
         public HashMap<Node, OccurrencesCount.OccurrenceProbability> getMap() {
             return map;
         }
 
+        /**
+         * Picks a random node (weighted by probability)
+         * @return The randomly picked node
+         */
         public Node randomNode() {
             Random random = new Random();
 
@@ -132,6 +172,11 @@ public class TransitionMatrix<Node> {
         return String.join(" ", wordsAtPoint);
     }
 
+    /**
+     * Records a transition from one node to another
+     * @param from the first node
+     * @param to the node that the first node points to
+     */
     public void recordTransition(Node from, Node to) {
         OccurrencesCount occurrencesCountFrom;
 
@@ -143,11 +188,20 @@ public class TransitionMatrix<Node> {
         matrix.put(from, occurrencesCountFrom);
     }
 
+    /**
+     * Returns a probability map from a specific node
+     * @param node the node to get the map from
+     * @return the probability map from a specific node
+     */
     public ProbabilityMap probabilities(Node node) {
         if (!matrix.containsKey(node)) return null;
         return new ProbabilityMap(matrix.get(node).occurrenceProbabilityHashMap);
     }
 
+    /**
+     * Converts the matrix to a human readable format (importable with importJson method)
+     * @return the json string
+     */
     public String toJson() {
         return new Gson().toJson(this, this.getClass());
     }
