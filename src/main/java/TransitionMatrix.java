@@ -3,6 +3,7 @@ import com.google.gson.Gson;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
+import java.util.Set;
 
 /**
  * Created by sambaumgarten on 3/8/16
@@ -68,6 +69,17 @@ public class TransitionMatrix<Node> {
             occurrenceProbability.add();
 
             occurrenceProbabilityHashMap.put(occurringNode, occurrenceProbability);
+        }
+
+        public String print(){
+            StringBuilder builder = new StringBuilder();
+            Set<Node> nodes = occurrenceProbabilityHashMap.keySet();
+            int i = 0;
+            for(Node n : nodes){
+                if(i != 0) builder.append(",");
+                builder.append("\n\t\t\"" + n.toString() + "\" : " + occurrenceProbabilityHashMap.get(n));
+            }
+            return builder.toString();
         }
     }
 
@@ -150,5 +162,26 @@ public class TransitionMatrix<Node> {
 
     public String toJson() {
         return new Gson().toJson(this, this.getClass());
+    }
+
+
+    //returns a table with all the Nodes, their occurences, and the probability of other Nodes in a JSON format.
+    public String getTable(){
+        StringBuilder table = new StringBuilder();
+        table.append("{");
+        Set<Node> nodes = matrix.keySet();
+        int i = 0;
+        for(Node n : nodes){
+            if(i != 0) table.append(",");
+            i++;
+            table.append("\n\t\"" + n.toString() + "\" : {\n");
+            table.append("\t\t\"occurrences\" : " + matrix.get(n).totalCount);
+            table.append(",\n\t\t\"probabilities\" : {");
+            table.append(matrix.get(n).print());
+            table.append("\n\t\t}");
+            table.append("\n\t}");
+        }
+        table.append("\n}");
+        return table.toString();
     }
 }
