@@ -21,4 +21,16 @@ public class Note {
     public boolean isRest(){
         return pitch == -1;
     }
+
+    public static String getNotation(int midiNumber) {
+        // http://stackoverflow.com/questions/712679/convert-midi-note-numbers-to-name-and-octave
+        final String notes = "C C#D D#E F F#G G#A A#B ";
+        final int octave = midiNumber / 12 - 1;
+        if(octave <= 0) return "UNK"; // fault, replace with assertion later
+        return notes.substring((midiNumber % 12) * 2, (midiNumber % 12) * 2 + 2);
+    }
+
+    public String toString(){
+        return duration + " of " + getNotation(pitch);
+    }
 }

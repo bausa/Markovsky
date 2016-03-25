@@ -12,6 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -95,13 +96,6 @@ public class Song {
         return retSong;
     }
 
-    private static String getNotation(int midiNumber) {
-        // http://stackoverflow.com/questions/712679/convert-midi-note-numbers-to-name-and-octave
-        final String notes = "C C#D D#E F F#G G#A A#B ";
-        final int octave = midiNumber / 12 - 1;
-        return notes.substring((midiNumber % 12) * 2, (midiNumber % 12) * 2 + 2);
-    }
-
     public static Song importFromArchive(String filename) throws IOException{
         String json = readFile(filename, StandardCharsets.UTF_8);
         return new Gson().fromJson(json, Song.class);
@@ -117,7 +111,12 @@ public class Song {
         }
     }
 
+    public String toString(){
+        return Arrays.toString(notes);
+    }
+
     public static void main(String[] args) throws IOException, InvalidMidiDataException {
         Song song = importMidi("magic flute.mid");
+        System.out.println(song);
     }
 }
