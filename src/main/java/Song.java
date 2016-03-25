@@ -11,20 +11,24 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by jack on 3/22/2016.
  */
 public class Song {
     private Note[] notes;
-    private final int tempo = 0; // tempo
+    private static final int tempo = 0; // tempo
 
-    private Song(){
+    private Song(Note[] notes){
+        this.notes = notes;
     }
 
     public enum StatusCodes{
         NOTE_ON,
-        NOTE_OFF;
+        NOTE_OFF,
+        UNRECOGNIZED;
 
         // https://www.midi.org/specifications/item/table-2-expanded-messages-list-status-bytes
         public static StatusCodes intToStatus(int number){
@@ -32,7 +36,7 @@ public class Song {
             if(number == 128) return NOTE_OFF;
             number = number ^ 0b00011111;
             if(number == 128) return NOTE_ON;
-            return null;
+            return UNRECOGNIZED;
         }
     }
 
@@ -45,34 +49,50 @@ public class Song {
     public static Song importMidi(String filename) throws IOException, InvalidMidiDataException {
         MidiFileReader reader = new StandardMidiFileReader();
         Sequence sequence = reader.getSequence(new BufferedInputStream(new FileInputStream(filename)));
+        List<Note> notes = new ArrayList<>();
+        //final float divisionType = sequence.getDivisionType(); It's PPQ in the corpus
+
+        final int ticksPerQuarter = sequence.getResolution();
+
         // can get tempo here if needed, but doesn't appear to be needed
-        Track[] tracks = sequence.getTracks();
+        final Track[] tracks = sequence.getTracks();
         // get rid of empty tracks
         for(Track t : tracks){
             // What do we do for multiple tracks?
+            int prevNoteNumber = -1;
+            long lastTick = 0;
             for(int i = 0; i < t.size(); i++){
-                MidiEvent currentEvent = t.get(i);
-                MidiMessage message = currentEvent.getMessage();
+                final MidiEvent currentEvent = t.get(i);
+                final MidiMessage message = currentEvent.getMessage();
+                final long currentTick = currentEvent.getTick();
+                final long ticks = currentTick-lastTick;
+                final double quarters = (double)ticks/(double)ticksPerQuarter;
                 if(message instanceof ShortMessage) { // just wanna look at shortmessage
                     ShortMessage noteMessage = (ShortMessage) message;
                     final StatusCodes status = StatusCodes.intToStatus(message.getStatus());
                     final int noteNumber = noteMessage.getData1(); // 0-127
                     final int velocityNumber = noteMessage.getData2(); // 0-127, can ignore
-                    final String note = getNotation(noteNumber);
-
+                    final Note currentNote = new Note(quarters, prevNoteNumber); // make last note
+                    notes.add(currentNote);
+                    lastTick = currentTick;
                     switch (status) {
                         case NOTE_ON:
-
+                            prevNoteNumber = noteNumber;
                             break;
                         case NOTE_OFF:
+                            prevNoteNumber = -1;  // rests
                             break;
                         default:
+                            System.err.println("unrecognized");
                             break;
                     }
                 }
             }
         }
-        return null;
+        Note[] notesArr = new Note[notes.size()];
+        notesArr = notes.toArray(notesArr);
+        Song retSong = new Song(notesArr);
+        return retSong;
     }
 
     private static String getNotation(int midiNumber) {
@@ -98,6 +118,6 @@ public class Song {
     }
 
     public static void main(String[] args) throws IOException, InvalidMidiDataException {
-        importMidi("magic flute.mid");
+        Song song = importMidi("magic flute.mid");
     }
 }
