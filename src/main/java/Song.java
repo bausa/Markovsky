@@ -33,10 +33,8 @@ public class Song {
 
         // https://www.midi.org/specifications/item/table-2-expanded-messages-list-status-bytes
         public static StatusCodes intToStatus(int number){
-            number = number ^ 0b00001111;
-            if(number == 128) return NOTE_OFF;
-            number = number ^ 0b00011111;
-            if(number == 128) return NOTE_ON;
+            if((number&0b10010000) == 0b10010000) return NOTE_ON;
+            if((number&0b10000000) == 0b10000000) return NOTE_OFF;
             return UNRECOGNIZED;
         }
     }
@@ -84,11 +82,16 @@ public class Song {
                             prevNoteNumber = -1;  // rests
                             break;
                         default:
-                            System.err.println("unrecognized");
+                            System.err.println("unrecognized: " + message.getStatus());
                             break;
                     }
                 }
             }
+        }
+        // cleanup
+        for(int i = 0; i < notes.size(); i++){
+            Note n = notes.get(i);
+            if(n.getDuration() == 0) notes.remove(i--);
         }
         Note[] notesArr = new Note[notes.size()];
         notesArr = notes.toArray(notesArr);

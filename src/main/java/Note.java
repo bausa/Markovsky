@@ -2,6 +2,7 @@
  * Created by jack on 3/22/2016.
  */
 public class Note {
+    private static final int REST_NUMBER = -1;
     private double duration; // in beats
     private int pitch; // in MIDI keyboard
 
@@ -19,11 +20,12 @@ public class Note {
     }
 
     public boolean isRest(){
-        return pitch == -1;
+        return pitch == REST_NUMBER;
     }
 
     public static String getNotation(int midiNumber) {
         // http://stackoverflow.com/questions/712679/convert-midi-note-numbers-to-name-and-octave
+        if(midiNumber == REST_NUMBER) return "REST";
         final String notes = "C C#D D#E F F#G G#A A#B ";
         final int octave = midiNumber / 12 - 1;
         if(octave <= 0) return "UNK"; // fault, replace with assertion later
