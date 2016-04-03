@@ -35,8 +35,8 @@ public class Song {
 
         // https://www.midi.org/specifications/item/table-2-expanded-messages-list-status-bytes
         public static StatusCodes intToStatus(int number){
-            if((number&0b10010000) == 0b10010000) return NOTE_ON;
-            if((number&0b10000000) == 0b10000000) return NOTE_OFF;
+            if((number & 0b10010000) == 0b10010000) return NOTE_ON;
+            if((number & 0b10000000) == 0b10000000) return NOTE_OFF;
             return UNRECOGNIZED;
         }
     }
