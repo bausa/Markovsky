@@ -1,3 +1,5 @@
+import org.markovsky.TransitionMatrix;
+
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
@@ -15,25 +17,10 @@ public class Main {
             data = scanner.nextLine();
         }
 
-        int level = 2; // amount of frame
-
-        String currentWord = matrix.importData(input.toString(), level);
+        String currentWord = matrix.importData(input.toString());
 
         while (currentWord != null) {
-            String word = "";
-            for (int i = 0; i < level; i++) {
-                if (currentWord.split(" ").length > i) word += currentWord.split(" ")[i] + " ";
-            }
-            TransitionMatrix<String>.ProbabilityMap probabilityMap = matrix.probabilities(currentWord);
-
-            if (probabilityMap == null) break;
-
-            currentWord = probabilityMap.randomNode();
-            String[] subwords = currentWord.split(" ");
-
-            for(int i = 1; i < subwords.length; i++){
-                System.out.print(subwords[i] + " ");
-            }
+            System.out.println(currentWord);
         }
     }
 }

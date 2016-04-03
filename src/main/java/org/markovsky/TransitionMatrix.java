@@ -1,15 +1,15 @@
+package org.markovsky;
+
 import com.google.gson.Gson;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
+import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * Created by sambaumgarten on 3/8/16
  */
 public class TransitionMatrix<Node> {
-    private final String VERSION = "0.1";
+    private String VERSION = "0.1";
 
     private HashMap<Node, OccurrencesCount> matrix = new HashMap<Node, OccurrencesCount>();
 
@@ -28,7 +28,9 @@ public class TransitionMatrix<Node> {
      */
     public static TransitionMatrix importJson(String json) throws VersionMatchException {
         TransitionMatrix matrix = new Gson().fromJson(json, TransitionMatrix.class);
-        if (matrix.VERSION != new TransitionMatrix().VERSION) throw new VersionMatchException(matrix.VERSION);
+        if (!matrix.VERSION.equals(new TransitionMatrix().VERSION)) {
+            throw new VersionMatchException(matrix.VERSION);
+        }
         return matrix;
     }
 
@@ -71,6 +73,16 @@ public class TransitionMatrix<Node> {
             public String toString() {
                 return "" + getProbability();
             }
+
+            @Override
+            public boolean equals(Object o) {
+                if (this == o) return true;
+                if (o == null || getClass() != o.getClass()) return false;
+
+                OccurrenceProbability that = (OccurrenceProbability) o;
+
+                return count == that.count;
+            }
         }
 
         /**
@@ -104,6 +116,18 @@ public class TransitionMatrix<Node> {
                 builder.append("\n\t\t\"" + n.toString() + "\" : " + occurrenceProbabilityHashMap.get(n));
             }
             return builder.toString();
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+
+            OccurrencesCount that = (OccurrencesCount) o;
+
+            if (totalCount != that.totalCount) return false;
+            if (!node.equals(that.node)) return false;
+            return occurrenceProbabilityHashMap.equals(that.occurrenceProbabilityHashMap);
         }
     }
 
@@ -155,33 +179,14 @@ public class TransitionMatrix<Node> {
         }
     }
 
-    public String importData(String data, int level) {
+    public String importData(String data) {
         String[] words = data.split(" ");
 
-        String firstFrom = words[0];
-        String firstTo = segmentForString(words, level, 1);
-
-        recordTransition((Node) firstFrom, (Node) firstTo);
-
-        for (int i = 0; i < words.length - level; i++) {
-            String from = segmentForString(words, level, i);
-            String to = segmentForString(words, level, i + level);
-
-            recordTransition((Node) from, (Node) to);
+        for (int i = 0; i < words.length - 1; i++) {
+            recordTransition((Node) words[i], (Node) words[i + 1]);
         }
 
-        return firstFrom;
-    }
-
-    private String segmentForString(String words[], int level, int word) {
-        String wordsAtPoint[] = new String[level + 1];
-
-        for (int j = 0; j <= level; j++) {
-            if (words.length <= word + j) break;
-            wordsAtPoint[j] = words[word + j];
-        }
-
-        return String.join(" ", wordsAtPoint);
+        return words[0];
     }
 
     /**
@@ -218,6 +223,34 @@ public class TransitionMatrix<Node> {
         return new Gson().toJson(this, this.getClass());
     }
 
+    /**
+     * Returns the number of nodes stored
+     * @return the number of nodes stored
+     */
+    public int numberOfNodes() {
+        int count = 0;
+        LinkedBlockingQueue<Node> queue = new LinkedBlockingQueue<>();
+        ArrayList<Node> visited = new ArrayList<>();
+
+        for (Node node : matrix.keySet()) {
+            queue.add(node);
+        }
+
+        while (!queue.isEmpty()) {
+            Node node = queue.remove();
+            visited.add(node);
+
+            count++;
+
+            if (!matrix.containsKey(node)) continue;
+
+            for (Node child : matrix.get(node).occurrenceProbabilityHashMap.keySet()) {
+                if (!visited.contains(child) && !queue.contains(child)) queue.add(child);
+            }
+        }
+
+        return count;
+    }
 
     //returns a table with all the Nodes, their occurences, and the probability of other Nodes in a JSON format.
     public String getTable(){
@@ -237,5 +270,15 @@ public class TransitionMatrix<Node> {
         }
         table.append("\n}");
         return table.toString();
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (object instanceof TransitionMatrix) return equals((TransitionMatrix) object);
+        else return false;
+    }
+
+    private boolean equals(TransitionMatrix matrix) {
+        return matrix.matrix.equals(this.matrix);
     }
 }

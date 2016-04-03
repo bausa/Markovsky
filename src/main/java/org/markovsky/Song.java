@@ -1,3 +1,5 @@
+package org.markovsky;
+
 import com.google.gson.Gson;
 import com.sun.media.sound.StandardMidiFileReader;
 
