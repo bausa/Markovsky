@@ -169,7 +169,7 @@ public class TransitionMatrixTest {
     @Test
     public void testRandomNode() throws Exception {
         TransitionMatrix<String> transitionMatrix = new TransitionMatrix<>();
-        
+
         // Add a transition
         transitionMatrix.recordTransition("Hello", "My");
 
