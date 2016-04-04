@@ -156,7 +156,7 @@ public class TransitionMatrixTest {
         assertNotEquals(transitionMatrixA, transitionMatrixB);
 
         // Ensure different classes aren't equal
-        assertNotEquals(transitionMatrixA, "");
+        assertFalse(transitionMatrixA.equals(""));
     }
 
     @Test(expectedExceptions = TransitionMatrix.VersionMatchException.class)
