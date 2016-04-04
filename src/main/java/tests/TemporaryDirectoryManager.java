@@ -6,14 +6,20 @@ import java.io.File;
  * Created by sambaumgarten on 4/3/16
  */
 public class TemporaryDirectoryManager {
-    public static void createTempDir() {
-        File file = new File("tmp");
-        file.mkdir();
+    public static boolean create() {
+        return tmpDir().mkdir();
     }
 
-    public static void deleteTempDir() {
-        File file = new File("tmp");
-        deleteDir(file);
+    public static boolean delete() {
+        return deleteDir(tmpDir());
+    }
+
+    public static boolean exists() {
+        return tmpDir().exists();
+    }
+
+    private static File tmpDir() {
+        return new File("tmp");
     }
 
     // http://stackoverflow.com/questions/3775694/deleting-folder-from-java
