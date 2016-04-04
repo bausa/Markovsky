@@ -49,4 +49,14 @@ public class Note {
         return pitch == note.pitch;
 
     }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(duration);
+        result = (int) (temp ^ (temp >>> 32));
+        result = 31 * result + pitch;
+        return result;
+    }
 }

@@ -24,7 +24,7 @@ public class Song {
     private Note[] notes;
     private static final int tempo = 0; // tempo
 
-    private Song(Note[] notes){
+    public Song(Note[] notes){
         this.notes = notes;
     }
 
