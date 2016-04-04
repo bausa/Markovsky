@@ -22,6 +22,7 @@ public class Main {
         String currentWord = matrix.importData(input.toString());
 
         while (currentWord != null) {
+            currentWord = matrix.probabilities(currentWord).randomNode();
             System.out.println(currentWord);
         }
     }
