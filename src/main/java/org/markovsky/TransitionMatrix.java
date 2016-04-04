@@ -275,6 +275,13 @@ public class TransitionMatrix<Node> {
         return table.toString();
     }
 
+    public Node getSeed(){
+        Set<Node> set = matrix.keySet();
+        Node[] arr = (Node[]) set.toArray();
+        int i = (int) (Math.random() * arr.length);
+        return arr[i];
+    }
+
     @Override
     public boolean equals(Object object) {
         if (object instanceof TransitionMatrix) return equals((TransitionMatrix) object);
