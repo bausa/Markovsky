@@ -2,7 +2,6 @@ package org.markovsky;
 
 import com.google.gson.Gson;
 import com.sun.media.sound.StandardMidiFileReader;
-import tests.TestAnnotations;
 
 import javax.sound.midi.*;
 import javax.sound.midi.spi.MidiFileReader;
