@@ -25,4 +25,9 @@ public class MusicGeneratorTest {
 
         assertEquals(song, new Song(new Note[] {note1, note2}));
     }
+
+    @Test
+    public void testCreation() throws Exception {
+        MusicGenerator musicGenerator = new MusicGenerator();
+    }
 }

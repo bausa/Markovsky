@@ -83,6 +83,11 @@ public class TransitionMatrix<Node> {
 
                 return count == that.count;
             }
+
+            @Override
+            public int hashCode() {
+                return count;
+            }
         }
 
         /**
@@ -127,6 +132,14 @@ public class TransitionMatrix<Node> {
             if (totalCount != that.totalCount) return false;
             if (!node.equals(that.node)) return false;
             return occurrenceProbabilityHashMap.equals(that.occurrenceProbabilityHashMap);
+        }
+
+        @Override
+        public int hashCode() {
+            int result = node != null ? node.hashCode() : 0;
+            result = 31 * result + (occurrenceProbabilityHashMap != null ? occurrenceProbabilityHashMap.hashCode() : 0);
+            result = 31 * result + totalCount;
+            return result;
         }
     }
 
@@ -286,6 +299,13 @@ public class TransitionMatrix<Node> {
     public boolean equals(Object object) {
         if (object instanceof TransitionMatrix) return equals((TransitionMatrix) object);
         else return false;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = VERSION != null ? VERSION.hashCode() : 0;
+        result = 31 * result + (matrix != null ? matrix.hashCode() : 0);
+        return result;
     }
 
     private boolean equals(TransitionMatrix matrix) {

@@ -132,6 +132,11 @@ public class Song {
 
     }
 
+    @Override
+    public int hashCode() {
+        return notes != null ? Arrays.hashCode(notes) : 0;
+    }
+
     @tests.CoverageIgnore
     public static void main(String[] args) throws IOException, InvalidMidiDataException {
         Song song = importMidi("magic flute.mid");

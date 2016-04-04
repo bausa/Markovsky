@@ -1,5 +1,6 @@
 package tests;
 
+import org.markovsky.Note;
 import org.markovsky.Song;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -56,5 +57,18 @@ public class SongTest {
         Song jsonSong = Song.importFromArchive(file.getAbsolutePath());
 
         assertEquals(song, jsonSong);
+    }
+
+    @Test
+    public void testEquals() throws Exception {
+        Song song = Song.importMidi("tmp/test_midi_file.mid");
+        Song song1 = new Song(new Note[] {});
+
+        assertEquals(song, song);
+        assertNotEquals(song, "");
+        assertNotEquals(song, song1);
+
+        assertEquals(song.hashCode(), song.hashCode());
+
     }
 }

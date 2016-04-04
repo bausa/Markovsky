@@ -8,6 +8,7 @@
             <class name="tests.NoteTest"/>
             <class name="tests.SongTest"/>
             <class name="tests.TemporaryDirectoryManagerTest"/>
+            <class name="tests.MusicGeneratorTest"/>
         </classes>
     </test>
 </suite>
