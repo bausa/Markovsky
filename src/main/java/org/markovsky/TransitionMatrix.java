@@ -109,11 +109,10 @@ public class TransitionMatrix<Node> {
 
         public String print(){
             StringBuilder builder = new StringBuilder();
-            Set<Node> nodes = occurrenceProbabilityHashMap.keySet();
             int i = 0;
-            for(Node n : nodes){
+            for(Map.Entry<Node, OccurrenceProbability> entry : occurrenceProbabilityHashMap.entrySet()){
                 if(i != 0) builder.append(",");
-                builder.append("\n\t\t\"" + n.toString() + "\" : " + occurrenceProbabilityHashMap.get(n));
+                builder.append("\n\t\t\"" + entry.getKey().toString() + "\" : " + entry.getValue());
             }
             return builder.toString();
         }
@@ -167,15 +166,20 @@ public class TransitionMatrix<Node> {
             HashMap<Node, OccurrencesCount.OccurrenceProbability> probabilityHashMap = getMap();
             if (probabilityHashMap == null) return null;
 
+            Node result = null;
+
             for (int i = 0; i < probabilityHashMap.size(); i++) {
                 Node key = (Node) probabilityHashMap.keySet().toArray()[i];
                 TransitionMatrix.OccurrencesCount.OccurrenceProbability occurrenceProbability = (TransitionMatrix.OccurrencesCount.OccurrenceProbability) probabilityHashMap.values().toArray()[i];
                 currentNumber += occurrenceProbability.getProbability();
 
-                if (currentNumber >= randomNumber) return key;
+                if (currentNumber >= randomNumber) {
+                    result = key;
+                    break;
+                }
             }
 
-            return null;
+            return result;
         }
     }
 
@@ -256,15 +260,14 @@ public class TransitionMatrix<Node> {
     public String getTable(){
         StringBuilder table = new StringBuilder();
         table.append("{");
-        Set<Node> nodes = matrix.keySet();
         int i = 0;
-        for(Node n : nodes){
-            if(i != 0) table.append(",");
+        for(Map.Entry<Node, OccurrencesCount> entry : matrix.entrySet()){
+            if (i != 0) table.append(",");
             i++;
-            table.append("\n\t\"" + n.toString() + "\" : {\n");
-            table.append("\t\t\"occurrences\" : " + matrix.get(n).totalCount);
+            table.append("\n\t\"" + entry.getKey().toString() + "\" : {\n");
+            table.append("\t\t\"occurrences\" : " + entry.getValue().totalCount);
             table.append(",\n\t\t\"probabilities\" : {");
-            table.append(matrix.get(n).print());
+            table.append(entry.getValue().print());
             table.append("\n\t\t}");
             table.append("\n\t}");
         }
