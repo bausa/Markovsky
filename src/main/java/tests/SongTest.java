@@ -6,9 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import javax.sound.midi.*;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 
 import static org.testng.Assert.*;
@@ -19,7 +17,7 @@ import static org.testng.Assert.*;
 public class SongTest {
     @BeforeMethod
     public void createTempDir() {
-        TemporaryDirectoryManager.createTempDir();
+        TemporaryDirectoryManager.create();
     }
 
     @BeforeMethod
@@ -29,7 +27,7 @@ public class SongTest {
 
     @AfterMethod
     public void deleteTempDir() {
-        TemporaryDirectoryManager.deleteTempDir();
+        TemporaryDirectoryManager.delete();
     }
 
     @Test
