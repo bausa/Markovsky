@@ -6,7 +6,9 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
-    @TestAnnotations.CoverageIgnore
+    public @interface CoverageIgnore{}
+
+    @CoverageIgnore
     public static void main(String[] args) throws FileNotFoundException {
 	    TransitionMatrix<String> matrix = new TransitionMatrix<>();
 

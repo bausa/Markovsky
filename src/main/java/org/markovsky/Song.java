@@ -133,7 +133,9 @@ public class Song {
 
     }
 
-    @TestAnnotations.CoverageIgnore
+    public @interface CoverageIgnore{}
+
+    @CoverageIgnore
     public static void main(String[] args) throws IOException, InvalidMidiDataException {
         Song song = importMidi("magic flute.mid");
         System.out.println(song);
