@@ -178,7 +178,7 @@ public class TransitionMatrixTest {
         // Add a transition
         transitionMatrix.recordTransition("Hello", "Your");
 
-        int tries = 5;
+        int tries = 10;
 
         while (tries >= 0) {
             if (transitionMatrix.probabilities("Hello").randomNode().equals("Your")) break;
