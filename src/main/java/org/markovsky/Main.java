@@ -1,12 +1,12 @@
 package org.markovsky;
 
+
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
-    public @interface CoverageIgnore{}
 
-    @CoverageIgnore
+    @tests.CoverageIgnore
     public static void main(String[] args) throws FileNotFoundException {
 	    TransitionMatrix<String> matrix = new TransitionMatrix<>();
 
