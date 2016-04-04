@@ -6,6 +6,7 @@
         <classes>
             <class name="tests.TransitionMatrixTest"/>
             <class name="tests.NoteTest"/>
+            <class name="tests.SongTest"/>
         </classes>
     </test>
 </suite>

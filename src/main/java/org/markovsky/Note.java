@@ -37,4 +37,16 @@ public class Note {
     public String toString(){
         return duration + " of " + getNotation(pitch);
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Note note = (Note) o;
+
+        if (Double.compare(note.duration, duration) != 0) return false;
+        return pitch == note.pitch;
+
+    }
 }

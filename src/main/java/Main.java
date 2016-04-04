@@ -1,5 +1,7 @@
 import org.markovsky.TransitionMatrix;
 
+import javax.sound.midi.*;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
