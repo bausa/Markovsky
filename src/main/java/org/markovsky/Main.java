@@ -1,15 +1,15 @@
-import org.markovsky.TransitionMatrix;
+package org.markovsky;
 
-import javax.sound.midi.*;
-import java.io.File;
+
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
 
+    @tests.CoverageIgnore
     public static void main(String[] args) throws FileNotFoundException {
 	    TransitionMatrix<String> matrix = new TransitionMatrix<>();
-//        System.setIn(new BufferedInputStream(new FileInputStream("bible.txt"))); // test
+
         Scanner scanner = new Scanner(System.in);
         StringBuilder input = new StringBuilder();
 

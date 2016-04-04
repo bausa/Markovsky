@@ -57,7 +57,6 @@ public class TransitionMatrixTest {
         transitionMatrix.recordTransition("Hello", "My");
 
         String json = transitionMatrix.toJson();
-        System.out.println(json);
 
         TransitionMatrix<String> matrixFromJson = TransitionMatrix.importJson(json);
 
