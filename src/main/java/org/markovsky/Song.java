@@ -2,6 +2,7 @@ package org.markovsky;
 
 import com.google.gson.Gson;
 import com.sun.media.sound.StandardMidiFileReader;
+import tests.TestAnnotations;
 
 import javax.sound.midi.*;
 import javax.sound.midi.spi.MidiFileReader;
@@ -132,6 +133,7 @@ public class Song {
 
     }
 
+    @TestAnnotations.CoverageIgnore
     public static void main(String[] args) throws IOException, InvalidMidiDataException {
         Song song = importMidi("magic flute.mid");
         System.out.println(song);
