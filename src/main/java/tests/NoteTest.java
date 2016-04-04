@@ -23,18 +23,36 @@ public class NoteTest {
 
     @Test
     public void testRest() throws Exception {
-        Note note = new Note(1.0, -1);
+        Note rest = new Note(1.0, -1);
+        Note notRest = new Note(1.0, 50);
 
-        assertEquals(note.isRest(), true);
+        assertEquals(rest.isRest(), true);
+        assertEquals(notRest.isRest(), false);
         assertEquals(Note.getNotation(-1), "REST");
     }
 
     @Test
     public void testToString() throws Exception {
         Note note = new Note(1.0, 50);
+        Note fault = new Note(1.0, 5);
 
         // See https://github.com/samuelb2/Markovsky/commit/97d7406cab41e9b02d065d5258f21e5e5bebac43#commitcomment-16946352
         assertEquals(note.toString(), "1.0 of D ");
+        assertEquals(fault.toString(), "1.0 of UNK");
+    }
 
+    @Test
+    public void testEquals() throws Exception {
+        Note note = new Note(1.0, 50);
+        Note note2 = new Note(2.0, 50);
+        Note note3 = new Note(1.0, 75);
+        Note note4 = new Note(1.0, 50);
+
+        assertTrue(note.equals(note));
+        assertFalse(note.equals(null));
+        assertFalse(note.equals(""));
+        assertFalse(note.equals(note2));
+        assertFalse(note.equals(note3));
+        assertTrue(note.equals(note4));
     }
 }
