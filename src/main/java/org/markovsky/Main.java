@@ -1,7 +1,5 @@
 package org.markovsky;
 
-import tests.TestAnnotations;
-
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
