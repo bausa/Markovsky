@@ -54,5 +54,7 @@ public class NoteTest {
         assertFalse(note.equals(note2));
         assertFalse(note.equals(note3));
         assertTrue(note.equals(note4));
+
+        assertEquals(note.hashCode(), note4.hashCode());
     }
 }
