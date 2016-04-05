@@ -120,7 +120,7 @@ public class Song {
                 final MidiEvent onEvent = new MidiEvent(onMessage, currentTick);
                 track.add(onEvent);
 
-                final ShortMessage offMessage = new ShortMessage(144, currentNote.getPitch(), 64);
+                final ShortMessage offMessage = new ShortMessage(128, currentNote.getPitch(), 64);
                 final MidiEvent offEvent = new MidiEvent(offMessage, currentTick + currentNoteLength);
                 track.add(offEvent);
             }
