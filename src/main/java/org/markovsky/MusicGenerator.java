@@ -10,6 +10,7 @@ public class MusicGenerator {
         LinkedList<Note> notes = new LinkedList<>();
 
         Note currentNote = startNote;
+        int i = 0;
         while (currentNote != null) {
             notes.add(currentNote);
             if (transitionMatrix.probabilities(currentNote) != null) {

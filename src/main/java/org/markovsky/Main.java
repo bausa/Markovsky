@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) throws IOException, InvalidMidiDataException {
         Song song = Song.importMidi("ClassicalCorpus.mid");
         TransitionMatrix<Note> songMatrix = song.getMatrix();
-        Song generatedSong = MusicGenerator.generateMusic(song.getNote(0), songMatrix);
+        Song generatedSong = MusicGenerator.generateMusic(songMatrix.getSeed(), songMatrix);
         generatedSong.write("GeneratedSong.mid");
     }
 }

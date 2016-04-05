@@ -20,7 +20,7 @@ import java.util.List;
 public class Song {
     public static final int WRITE_RESOLUTION = 24;
     private Note[] notes;
-    private static final int tempo = 0; // tempo
+    private static final int tempo = 20; // tempo
 
     public Song(Note[] notes){
         this.notes = notes;
@@ -102,9 +102,18 @@ public class Song {
     public void write(String filename) throws InvalidMidiDataException, IOException {
         Sequence sequence = new Sequence(Sequence.PPQ, WRITE_RESOLUTION); // 24 ticks per quarter
         Track track = sequence.createTrack();
+
+        // Set tempo
+        MetaMessage metaMessage = new MetaMessage();
+        byte[] tempoData = {(byte)tempo, (byte) 0x00, 0x00};
+        metaMessage.setMessage(0x51, tempoData, 3);
+        MidiEvent midiEvent = new MidiEvent(metaMessage, (long) 0);
+        track.add(midiEvent);
+
         long currentTick = 0;
         for(int i = 0; i < notes.length; i++){
             final Note currentNote = notes[i];
+            if(currentNote == Note.END) continue;
             final long currentNoteLength = Math.round(currentNote.getDuration() * WRITE_RESOLUTION);
             if(!currentNote.isRest()) { // unsure if this is how to handle rests
                 final ShortMessage onMessage = new ShortMessage(144, currentNote.getPitch(), 64);// velocity is set at 64 in the range of 0-127
@@ -151,7 +160,12 @@ public class Song {
     public TransitionMatrix<Note> getMatrix(){
         TransitionMatrix<Note> matrix = new TransitionMatrix<>();
         for(int i = 0; i < notes.length-1; i++) {
-            matrix.recordTransition(notes[i], notes[i+1]);
+            if(notes[i].isRest() && notes[i].getDuration() >= 2){
+                matrix.recordTransition(notes[i], Note.END);
+            }
+            else{
+                matrix.recordTransition(notes[i], notes[i+1]);
+            }
         }
         return matrix;
     }

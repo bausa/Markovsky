@@ -5,6 +5,8 @@ package org.markovsky;
  */
 public class Note {
     private static final int REST_NUMBER = -1;
+    private static final int END_PITCH = -2;
+    public static final Note END = new Note(0, END_PITCH);
     private double duration; // in beats
     private int pitch; // in MIDI keyboard
 
