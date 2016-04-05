@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.IOException;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotEquals;
 
 /**
  * Created by sambaumgarten on 4/3/16
