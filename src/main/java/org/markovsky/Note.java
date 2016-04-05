@@ -30,7 +30,7 @@ public class Note {
         if(midiNumber == REST_NUMBER) return "REST";
         final String notes = "C C#D D#E F F#G G#A A#B ";
         final int octave = midiNumber / 12 - 1;
-        if(octave <= 0) return "UNK"; // fault, replace with assertion later
+        if(octave < 0) return "UNK"; // fault, replace with assertion later
         return notes.substring((midiNumber % 12) * 2, (midiNumber % 12) * 2 + 2);
     }
 

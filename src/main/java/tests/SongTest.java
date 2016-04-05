@@ -5,11 +5,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import javax.sound.midi.*;
+import javax.sound.midi.InvalidMidiDataException;
 import java.io.File;
 import java.io.IOException;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 /**
  * Created by sambaumgarten on 4/3/16
@@ -41,6 +41,15 @@ public class SongTest {
     public void testMidiImport() throws Exception {
         Song song = Song.importMidi("tmp/test_midi_file.mid");
 
+        assertEquals(song.toString(), "[5.0 of C ]");
+    }
+
+    @Test
+    public void testMidiExport() throws Exception{
+        Song song = Song.importMidi("tmp/text_midi_file.mid");
+        assertEquals(song.toString(), "[5.0 of C ]");
+        song.write("tmp/text_midi_file.mid");
+        song = Song.importMidi("tmp/text_midi_file.mid");
         assertEquals(song.toString(), "[5.0 of C ]");
     }
 

@@ -5,10 +5,7 @@ import com.sun.media.sound.StandardMidiFileReader;
 
 import javax.sound.midi.*;
 import javax.sound.midi.spi.MidiFileReader;
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -21,6 +18,7 @@ import java.util.List;
  * Created by jack on 3/22/2016.
  */
 public class Song {
+    public static final int WRITE_RESOLUTION = 24;
     private Note[] notes;
     private static final int tempo = 0; // tempo
 
@@ -99,6 +97,36 @@ public class Song {
         notesArr = notes.toArray(notesArr);
         Song retSong = new Song(notesArr);
         return retSong;
+    }
+
+    public void write(String filename) throws InvalidMidiDataException, IOException {
+        Sequence sequence = new Sequence(Sequence.PPQ, WRITE_RESOLUTION); // 24 ticks per quarter
+        Track track = sequence.createTrack();
+        long currentTick = 0;
+        for(int i = 0; i < notes.length; i++){
+            final Note currentNote = notes[i];
+            final long currentNoteLength = Math.round(currentNote.getDuration() * WRITE_RESOLUTION);
+            if(!currentNote.isRest()) { // unsure if this is how to handle rests
+                final ShortMessage onMessage = new ShortMessage(144, currentNote.getPitch(), 64);// velocity is set at 64 in the range of 0-127
+                final MidiEvent onEvent = new MidiEvent(onMessage, currentTick);
+                track.add(onEvent);
+
+                final ShortMessage offMessage = new ShortMessage(144, currentNote.getPitch(), 64);
+                final MidiEvent offEvent = new MidiEvent(offMessage, currentTick + currentNoteLength);
+                track.add(offEvent);
+            }
+            currentTick += currentNoteLength;
+        }
+
+        // set end of track
+        MetaMessage mt = new MetaMessage();
+        byte[] bet = {}; // empty array
+        mt.setMessage(0x2F,bet,0);
+        MidiEvent me = new MidiEvent(mt, (long)140);
+        track.add(me);
+
+        File destinationFile = new File(filename);
+        MidiSystem.write(sequence, 1, destinationFile);
     }
 
     public static Song importFromArchive(String filename) throws IOException{
