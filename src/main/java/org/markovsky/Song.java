@@ -129,6 +129,10 @@ public class Song {
         MidiSystem.write(sequence, 1, destinationFile);
     }
 
+    public Note getNote(int index) {
+        return notes[index];
+    }
+
     public static Song importFromArchive(String filename) throws IOException{
         String json = readFile(filename, StandardCharsets.UTF_8);
         return new Gson().fromJson(json, Song.class);
@@ -142,6 +146,14 @@ public class Song {
         try(PrintWriter out = new PrintWriter(path)){
             out.println(toJson());
         }
+    }
+
+    public TransitionMatrix<Note> getMatrix(){
+        TransitionMatrix<Note> matrix = new TransitionMatrix<>();
+        for(int i = 0; i < notes.length-1; i++) {
+            matrix.recordTransition(notes[i], notes[i+1]);
+        }
+        return matrix;
     }
 
     public String toString(){
@@ -163,11 +175,5 @@ public class Song {
     @Override
     public int hashCode() {
         return notes != null ? Arrays.hashCode(notes) : 0;
-    }
-
-    @tests.CoverageIgnore
-    public static void main(String[] args) throws IOException, InvalidMidiDataException {
-        Song song = importMidi("magic flute.mid");
-        System.out.println(song);
     }
 }

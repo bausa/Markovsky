@@ -1,29 +1,16 @@
 package org.markovsky;
 
 
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+import javax.sound.midi.InvalidMidiDataException;
+import java.io.IOException;
 
 public class Main {
 
     @tests.CoverageIgnore
-    public static void main(String[] args) throws FileNotFoundException {
-	    TransitionMatrix<String> matrix = new TransitionMatrix<>();
-
-        Scanner scanner = new Scanner(System.in);
-        StringBuilder input = new StringBuilder();
-
-        String data = scanner.nextLine();
-        while (scanner.hasNext()) {
-            input.append(data + " ");
-            data = scanner.nextLine();
-        }
-
-        String currentWord = matrix.importData(input.toString());
-
-        while (currentWord != null) {
-            currentWord = matrix.probabilities(currentWord).randomNode();
-            System.out.println(currentWord);
-        }
+    public static void main(String[] args) throws IOException, InvalidMidiDataException {
+        Song song = Song.importMidi("ClassicalCorpus.mid");
+        TransitionMatrix<Note> songMatrix = song.getMatrix();
+        Song generatedSong = MusicGenerator.generateMusic(song.getNote(0), songMatrix);
+        generatedSong.write("GeneratedSong.mid");
     }
 }
