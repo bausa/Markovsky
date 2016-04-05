@@ -22,7 +22,7 @@ public class Song {
     private Note[] notes;
     private static final int tempo = 0; // tempo
 
-    private Song(Note[] notes){
+    public Song(Note[] notes){
         this.notes = notes;
     }
 
@@ -158,6 +158,11 @@ public class Song {
         // Probably incorrect - comparing Object[] arrays with Arrays.equals
         return Arrays.equals(notes, song.notes);
 
+    }
+
+    @Override
+    public int hashCode() {
+        return notes != null ? Arrays.hashCode(notes) : 0;
     }
 
     @tests.CoverageIgnore
