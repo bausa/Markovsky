@@ -208,7 +208,7 @@ public class Song {
             Block follow = new Block(curr, next);
 
             //Record the double transition of current to follow:
-            if(prev.isRest() && prev.getDuration() >= 2){
+            if(curr.isRest() && curr.getDuration() >= 2){
                 matrix.recordTransition(current, Block.END);
             } else {
                 matrix.recordTransition(current, follow);
