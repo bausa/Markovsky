@@ -186,6 +186,52 @@ public class Song {
         return matrix;
     }
 
+    //To get data with two notes and singular notes
+    public TransitionMatrix<Block> getSteppingMatrix(){
+        TransitionMatrix<Block> matrix = new TransitionMatrix<>();
+        Note prev, curr, next;
+        //Record a single transition if needed:
+        prev = notes[0];
+        curr = notes[1];
+        if(!(prev.isRest() && prev.getDuration() >= 2)){
+            Block current = new Block(null, prev);
+            matrix.recordTransition(current, new Block(null, curr));
+        }
+
+        for(int i = 0; i < notes.length-2; i++){
+
+            prev = notes[i];
+            curr = notes[i + 1];
+            next = notes[i + 2];
+
+            Block current = new Block(prev, curr);
+            Block follow = new Block(curr, next);
+
+            //Record the double transition of current to follow:
+            if(prev.isRest() && prev.getDuration() >= 2){
+                matrix.recordTransition(current, Block.END);
+            } else {
+                matrix.recordTransition(current, follow);
+            }
+
+            current = new Block(null, curr);
+            follow = new Block(curr, next);
+
+            //Record the single note pointing to a double transition:
+            //As well as record the single pointing to a single:
+            if(curr.isRest() && curr.getDuration() >= 2){
+                matrix.recordTransition(current, Block.END);
+            } else {
+                matrix.recordTransition(current, follow);
+
+                follow = new Block(null, next);
+
+                matrix.recordTransition(current, follow);
+            }
+        }
+        return matrix;
+    }
+
     public String toString(){
         return Arrays.toString(notes);
     }
