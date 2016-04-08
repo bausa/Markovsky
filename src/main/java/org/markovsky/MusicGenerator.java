@@ -37,7 +37,8 @@ public class MusicGenerator {
                 current = null;
             }
         }
-
+        //Running into a problem with last note being null
+        notes.remove(null);
         return new Song((Note [])notes.toArray(new Note[notes.size()]));
     }
 }
