@@ -22,4 +22,22 @@ public class MusicGenerator {
 
         return new Song((Note [])notes.toArray(new Note[notes.size()]));
     }
+
+    //Same method as above, except using Block. See the similarity?
+    public static Song generateMusicBlocks(Block startBlock, TransitionMatrix<Block> transitionMatrix) {
+        LinkedList<Note> notes = new LinkedList<>();
+
+        Block current = startBlock;
+        int i = 0;
+        while (current != null) {
+            notes.add(current.getCurrent());
+            if (transitionMatrix.probabilities(current) != null) {
+                current = transitionMatrix.probabilities(current).randomNode();
+            } else {
+                current = null;
+            }
+        }
+
+        return new Song((Note [])notes.toArray(new Note[notes.size()]));
+    }
 }

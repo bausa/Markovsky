@@ -22,6 +22,8 @@ public class Block{
     private Note previous;
     private Note current;
 
+    public static final Block END = new Block(null, null);
+
     public Block(Note previous, Note current){
         this.previous = previous;
         this.current = current;

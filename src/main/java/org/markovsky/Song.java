@@ -170,6 +170,21 @@ public class Song {
         return matrix;
     }
 
+    //Only issue with my generation is that the first note of the file is left out.
+    public TransitionMatrix<Block> getBlockMatrix(){
+        TransitionMatrix<Block> matrix = new TransitionMatrix<>();
+        for(int i = 1; i < notes.length-1; i++){
+            Block current = new Block(notes[i-1], notes[1]);
+            if(notes[i].isRest() && notes[i].getDuration() >= 2){
+                matrix.recordTransition(current, Block.END);
+            } else {
+                Block next = new Block(notes[i], notes[i+1]);
+                matrix.recordTransition(current, next);
+            }
+        }
+        return matrix;
+    }
+
     public String toString(){
         return Arrays.toString(notes);
     }
