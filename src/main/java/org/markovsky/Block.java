@@ -52,7 +52,9 @@ public class Block{
 
     //Poorly implemented hashCode, but it will get the job done.
     public int hashCode(){
-        int val = Math.abs(previous.hashCode() + current.hashCode());
+        int curr = (current != null)? getCurrent().hashCode() : 0;
+        int prev = (previous != null)? getPrevious().hashCode(): 0;
+        int val = Math.abs(curr + prev);
         if(val < 0) val = 0;
         return val;
     }
