@@ -171,6 +171,7 @@ public class Song {
     }
 
     //Only issue with my generation is that the first note of the file is left out.
+    //Otherwise it is VERY similar to above.
     public TransitionMatrix<Block> getBlockMatrix(){
         TransitionMatrix<Block> matrix = new TransitionMatrix<>();
         for(int i = 1; i < notes.length-1; i++){
