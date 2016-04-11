@@ -48,10 +48,10 @@ public class SongTest {
 
     @Test
     public void testMidiExport() throws Exception{
-        Song song = Song.importMidi("tmp/text_midi_file.mid");
+        Song song = Song.importMidi("tmp/test_midi_file.mid");
         assertEquals(song.toString(), "[5.0 of C ]");
-        song.write("tmp/text_midi_file.mid");
-        song = Song.importMidi("tmp/text_midi_file.mid");
+        song.write("tmp/test_midi_file2.mid");
+        song = Song.importMidi("tmp/test_midi_file2.mid");
         assertEquals(song.toString(), "[5.0 of C ]");
     }
 
