@@ -42,6 +42,13 @@ public class Block{
         return true;
     }
 
+    public String toString(){
+        String s = "";
+        if(previous != null) s += previous.toString() + " and ";
+        if(current != null) s +=  current.toString();
+        return s;
+    }
+
     public Note getPrevious(){
         return previous;
     }
