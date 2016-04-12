@@ -20,7 +20,7 @@ import java.util.List;
 public class Song {
     public static final int WRITE_RESOLUTION = 24;
     private Note[] notes;
-    private static final int tempo = 20; // tempo
+    private static final int tempo = 10; // tempo
 
     public Song(Note[] notes){
         this.notes = notes;
@@ -43,6 +43,38 @@ public class Song {
     private static String readFile(String path, Charset encoding) throws IOException {
         byte[] encoded = Files.readAllBytes(Paths.get(path));
         return new String(encoded, encoding);
+    }
+
+    public static Song[] songTest(Song[] songs){
+        List<Song> songList = new ArrayList<>();
+        for(Song s : songs){
+            if(s.getNumberNotes() < 10){
+                continue;
+            }
+            Note startNote = null;
+            for(int i = 0; i < s.notes.length && startNote == null; i++){
+                Note n = s.notes[i];
+                if(!n.isRest()){
+                    startNote = n;
+                }
+            }
+
+            Note endNote = null;
+            for(int i = s.notes.length-1; i >= 0 && endNote == null; i--){
+                Note n = s.notes[i];
+                if(!n.isRest()){
+                    endNote = n;
+                }
+            }
+
+            if(startNote.getPitch() != endNote.getPitch()){
+                continue;
+            }
+            songList.add(s);
+        }
+        Song[] retArr = new Song[songList.size()];
+        songList.toArray(retArr);
+        return retArr;
     }
 
     public static Song importMidi(String filename) throws IOException, InvalidMidiDataException {
@@ -140,6 +172,10 @@ public class Song {
 
     public Note getNote(int index) {
         return notes[index];
+    }
+
+    public int getNumberNotes(){
+        return notes.length;
     }
 
     public static Song importFromArchive(String filename) throws IOException{
