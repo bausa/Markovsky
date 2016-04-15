@@ -39,13 +39,29 @@ public class Song {
         }
     }
 
+    public Song[] split(){
+        List<Song> songs = new ArrayList<>();
+        int currentMarker = 0;
+        for (int i = 0; i < notes.length; i++){
+            if(notes[i].isRest() && notes[i].getDuration() >= 2){
+                Note[] noteDest = new Note[i - currentMarker];
+                System.arraycopy(this.notes, currentMarker, noteDest, 0, i-currentMarker);
+                songs.add(new Song(noteDest));
+                currentMarker = i + 1; // skip the long rest
+            }
+        }
+        Song[] songArr = new Song[songs.size()];
+        songArr = songs.toArray(songArr);
+        return songArr;
+    }
+
     // http://stackoverflow.com/questions/326390/how-to-create-a-java-string-from-the-contents-of-a-file
     private static String readFile(String path, Charset encoding) throws IOException {
         byte[] encoded = Files.readAllBytes(Paths.get(path));
         return new String(encoded, encoding);
     }
 
-    public static Song[] songTest(Song[] songs){
+    public static Song[] songTest(Song[] songs, Song[] sources){
         List<Song> songList = new ArrayList<>();
         for(Song s : songs){
             if(s.getNumberNotes() < 10){
@@ -70,6 +86,11 @@ public class Song {
             if(startNote.getPitch() != endNote.getPitch()){
                 continue;
             }
+
+            for(Song source : sources){
+                if(s.equals(source)) continue;
+            }
+
             songList.add(s);
         }
         Song[] retArr = new Song[songList.size()];
