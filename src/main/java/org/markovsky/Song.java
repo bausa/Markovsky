@@ -61,6 +61,7 @@ public class Song {
         return new String(encoded, encoding);
     }
 
+    // all of these made from refinements suggested by MT
     public static Song[] songTest(Song[] songs, Song[] sources){
         List<Song> songList = new ArrayList<>();
         for(Song s : songs){
