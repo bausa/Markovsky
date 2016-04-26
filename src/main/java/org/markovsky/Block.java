@@ -1,5 +1,7 @@
 package org.markovsky;
 
+import java.util.Objects;
+
 /**
  * Created by piete on 4/7/2016.
  */
@@ -29,17 +31,20 @@ public class Block{
         this.current = current;
     }
 
-    public boolean equals(Object o){
-        if(o instanceof Block) return equals((Block) o);
-        return false;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Block block = (Block) o;
+        return Objects.equals(previous, block.previous) &&
+                Objects.equals(current, block.current);
     }
 
-
-    //Just checks that the contents are the same.
-    public boolean equals(Block b){
-        if(b.current != current) return false;
-        if(b.previous != previous) return false;
-        return true;
+    @Override
+    public int hashCode() {
+        int result = previous != null ? previous.hashCode() : 0;
+        result = 31 * result + (current != null ? current.hashCode() : 0);
+        return result;
     }
 
     public String toString(){
@@ -55,14 +60,5 @@ public class Block{
 
     public Note getCurrent(){
         return current;
-    }
-
-    //Poorly implemented hashCode, but it will get the job done.
-    public int hashCode(){
-        int curr = (current != null)? getCurrent().hashCode() : 0;
-        int prev = (previous != null)? getPrevious().hashCode(): 0;
-        int val = Math.abs(curr + prev);
-        if(val < 0) val = 0;
-        return val;
     }
 }

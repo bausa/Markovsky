@@ -68,29 +68,44 @@ public class Song {
             if(s.getNumberNotes() < 10){
                 continue;
             }
-            Note startNote = null;
-            for(int i = 0; i < s.notes.length && startNote == null; i++){
-                Note n = s.notes[i];
-                if(!n.isRest()){
-                    startNote = n;
-                }
-            }
 
-            Note endNote = null;
-            for(int i = s.notes.length-1; i >= 0 && endNote == null; i--){
-                Note n = s.notes[i];
-                if(!n.isRest()){
-                    endNote = n;
-                }
-            }
+            boolean signal = false;
 
-            if(startNote.getPitch() != endNote.getPitch()){
-                continue;
-            }
+            int minSum = Integer.MAX_VALUE;
+            Song maxSong = null;
 
             for(Song source : sources){
-                if(s.equals(source)) continue;
+                if(s.equals(source)){
+                    signal = true;
+                    break;
+                }
+                // if it equals more than a subset of, say, 3 notes, cancel
+                int topSum = 0;
+                for(int i = 0; i < source.notes.length; i++){
+                    int sum = 0;
+                    int midSum = 0;
+                    for(int j = 0; j < s.notes.length; j++){
+                        if(source.notes[i].equals(s.notes[j])){
+                            sum++;
+                        }
+                        else{
+                            if(sum > midSum){
+                                midSum = sum;
+                            }
+                            sum = 0;
+                        }
+                    }
+                    if(midSum > topSum){
+                        topSum = midSum;
+                    }
+                }
+                if(topSum >= 3){
+                    signal = true;
+                    break;
+                }
             }
+
+            if(signal) continue;
 
             songList.add(s);
         }
@@ -291,7 +306,13 @@ public class Song {
     }
 
     public String toString(){
-        return Arrays.toString(notes);
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Note n : notes) {
+            stringBuilder.append(n.toString() + "\n");
+        }
+
+        return stringBuilder.toString();
+        //return Arrays.toString(notes);
     }
 
     @Override

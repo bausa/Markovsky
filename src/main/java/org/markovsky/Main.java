@@ -28,7 +28,6 @@ public class Main {
         Song[] songsArr = new Song[songs.size()];
         songs.toArray(songsArr);
         songsArr = Song.songTest(songsArr, melodies);
-        System.out.println(songsArr.length);
         File folder = new File("GeneratedSongs" + File.separator);
         if(!folder.exists()){
             folder.mkdir();
@@ -36,6 +35,12 @@ public class Main {
         for (int i = 0; i < songsArr.length; i++){
             Song s = songsArr[i];
             s.write("GeneratedSongs" + File.separator + "GeneratedSong " + i + ".mid");
+        }
+
+        System.out.println(songsArr[0].toString());
+        System.out.println("-----------------");
+        for(Song s : melodies){
+            System.out.println(s.toString());
         }
     }
 
