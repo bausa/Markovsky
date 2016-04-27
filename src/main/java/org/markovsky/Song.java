@@ -62,8 +62,11 @@ public class Song {
     }
 
     // all of these made from refinements suggested by MT
-    public static Song[] songTest(Song[] songs, Song[] sources){
+    public static Song songTest(Song[] songs, Song[] sources){
         List<Song> songList = new ArrayList<>();
+        int minSum = Integer.MAX_VALUE;
+        Song maxSong = null;
+
         for(Song s : songs){
             if(s.getNumberNotes() < 10){
                 continue;
@@ -71,8 +74,7 @@ public class Song {
 
             boolean signal = false;
 
-            int minSum = Integer.MAX_VALUE;
-            Song maxSong = null;
+
 
             for(Song source : sources){
                 if(s.equals(source)){
@@ -103,6 +105,11 @@ public class Song {
                     signal = true;
                     break;
                 }
+
+                if (minSum > topSum) {
+                    minSum = topSum;
+                    maxSong = s;
+                }
             }
 
             if(signal) continue;
@@ -111,7 +118,9 @@ public class Song {
         }
         Song[] retArr = new Song[songList.size()];
         songList.toArray(retArr);
-        return retArr;
+//        return retArr;
+
+        return maxSong;
     }
 
     public static Song importMidi(String filename) throws IOException, InvalidMidiDataException {

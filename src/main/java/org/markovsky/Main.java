@@ -17,7 +17,7 @@ public class Main {
     private static void importLoopyBlock() throws IOException, InvalidMidiDataException {
         Song song = Song.importMidi("ClassicalCorpus.mid");
         Song[] melodies = song.split();
-        List<Song> songs = new ArrayList<>(1_000);
+        List<Song> songs = new ArrayList<>(900);
 
         while(songs.size() < 100) {
             Song generatedSong = null;
@@ -27,7 +27,8 @@ public class Main {
         }
         Song[] songsArr = new Song[songs.size()];
         songs.toArray(songsArr);
-        songsArr = Song.songTest(songsArr, melodies);
+//        songsArr = Song.songTest(songsArr, melodies);
+        songsArr = new Song[] {Song.songTest(songsArr, melodies)};
         File folder = new File("GeneratedSongs" + File.separator);
         if(!folder.exists()){
             folder.mkdir();
